@@ -9,5 +9,4 @@ class AbilityScores : BaseModel() {
     val full_name: String = ""
     val desc: List<String> = emptyList()
     val skills: List<APIReference> = emptyList()
-    val url: String = ""
 }

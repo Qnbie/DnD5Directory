@@ -5,5 +5,4 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class APIReference : BaseModel(){
-    val url: String = ""
 }
