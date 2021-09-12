@@ -3,8 +3,8 @@ package data.commonmodels
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Choice (
-    val choose: Int,
-    val type: String,
-    val from: List<APIReference>
-    )
+class Choice {
+    val choose: Int = 0
+    val type: String = ""
+    val from: List<APIReference> = emptyList()
+    }

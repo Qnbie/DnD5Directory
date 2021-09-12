@@ -3,7 +3,7 @@ package data.commonmodels
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Cost (
-    val quantity: Int,
-    val unit: String
-    )
+class Cost {
+    val quantity: Int = 0
+    val unit: String = ""
+}

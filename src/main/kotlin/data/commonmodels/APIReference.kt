@@ -1,10 +1,9 @@
 package data.commonmodels
 
+import data.BaseModel
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class APIReference(
-    val index: String,
-    val name: String,
-    val url: String
-)
+class APIReference : BaseModel(){
+    val url: String = ""
+}
