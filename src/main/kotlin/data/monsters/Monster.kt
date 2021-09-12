@@ -1,6 +1,5 @@
 package data.monsters
 
-import data.characterdata.Proficiencies
 import data.commonmodels.APIReference
 import data.commonmodels.BaseModel
 import kotlinx.serialization.SerialName

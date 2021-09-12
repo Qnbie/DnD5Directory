@@ -3,7 +3,7 @@ package data.classes
 import data.commonmodels.BaseModel
 import data.commonmodels.APIReference
 import data.commonmodels.Choice
-import data.commonmodels.CommonLists
+import data.commonmodels.APIResourceList
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -16,7 +16,7 @@ class Class {
     val starting_equipment_options : List<Starting_equipment_options> = emptyList()
     val class_levels : String = ""
     val multi_classing : Multi_classing = Multi_classing()
-    val subclasses: CommonLists = CommonLists()
+    val subclasses: APIResourceList = APIResourceList()
     val spellcastingClass: Spellcasting_Class = Spellcasting_Class()
     val spells: String = ""
 }

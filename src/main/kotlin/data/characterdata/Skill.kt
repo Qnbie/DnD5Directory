@@ -2,11 +2,10 @@ package data.characterdata
 
 import data.commonmodels.BaseModel
 import data.commonmodels.APIReference
-import kotlinx.serialization.*
+import kotlinx.serialization.Serializable
 
 @Serializable
-class AbilityScores : BaseModel() {
-    val full_name: String = ""
+class Skill : BaseModel() {
     val desc: List<String> = emptyList()
-    val skills: List<APIReference> = emptyList()
+    val abilityScores: List<APIReference> = emptyList()
 }

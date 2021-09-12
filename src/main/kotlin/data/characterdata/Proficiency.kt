@@ -5,7 +5,7 @@ import data.commonmodels.APIReference
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Proficiencies : BaseModel() {
+class Proficiency : BaseModel() {
     val type: String = ""
     val classes: List<APIReference> = emptyList()
     val races: List<APIReference> = emptyList()
