@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.30"
+    kotlin("jvm") version "1.5.30" // or kotlin("multiplatform") or any other kotlin plugin
+    kotlin("plugin.serialization") version "1.5.30"
     application
 }
 
@@ -13,6 +14,9 @@ repositories {
 }
 
 dependencies {
+    implementation("io.ktor:ktor-client-core:1.6.3")
+    implementation("io.ktor:ktor-client-cio:1.6.3")
+    implementation("io.ktor:ktor-client-serialization:1.6.3")
     testImplementation(kotlin("test"))
 }
 
