@@ -1,6 +1,6 @@
 package data.characterdata
 
-import data.BaseModel
+import data.commonmodels.BaseModel
 import kotlinx.serialization.Serializable
 
 @Serializable

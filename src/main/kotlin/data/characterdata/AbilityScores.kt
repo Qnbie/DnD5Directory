@@ -1,6 +1,6 @@
 package data.characterdata
 
-import data.BaseModel
+import data.commonmodels.BaseModel
 import data.commonmodels.APIReference
 import kotlinx.serialization.*
 

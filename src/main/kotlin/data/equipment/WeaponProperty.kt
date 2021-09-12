@@ -1,10 +1,9 @@
-package data.characterdata
+package data.equipment
 
 import data.commonmodels.BaseModel
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Alignments : BaseModel() {
-    val abbreviation: String = ""
+class WeaponProperty : BaseModel() {
     val desc: List<String> = emptyList()
 }
