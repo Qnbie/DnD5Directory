@@ -1,15 +1,15 @@
-package requester.characterdata
+package apicontroller.characterdata
 
 import data.characterdata.Alignment
 import io.ktor.client.*
 import io.ktor.client.request.*
-import requester.BaseRequester
+import apicontroller.APIControllerBase
 
-class AlignmentsReq(client: HttpClient) : BaseRequester(client) {
+class AlignmentsAPI(client: HttpClient) : APIControllerBase(client) {
 
     override var SITE_URL = "alignment/"
 
     suspend fun getAlignment(index: String) : Alignment{
-        return client.get(BASE_URL + SITE_URL + index)
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

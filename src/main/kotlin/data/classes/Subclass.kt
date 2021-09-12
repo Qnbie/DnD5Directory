@@ -5,7 +5,7 @@ import data.commonmodels.Prerequisites
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Subclasses {
+class Subclass {
     val count : Int = 0
     val results: APIReference = APIReference()
     val subclass_flavor: String = ""

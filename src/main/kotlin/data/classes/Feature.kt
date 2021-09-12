@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 import data.commonmodels.Choice
 
 @Serializable
-class Features : BaseModel() {
+class Feature : BaseModel() {
     val level : Int = 0
     val classAPI: APIReference = APIReference()
     val subclass: APIReference = APIReference()

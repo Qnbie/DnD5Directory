@@ -1,11 +1,11 @@
-package requester
+package apicontroller
 
 import data.commonmodels.APIResourceList
 import io.ktor.client.*
 import io.ktor.client.request.*
 
 
-abstract class BaseRequester protected constructor(val client: HttpClient) {
+abstract class APIControllerBase protected constructor(val client: HttpClient) {
     val BASE_URL = "https://www.dnd5eapi.co/api/"
     protected abstract var SITE_URL: String
 

@@ -15,7 +15,7 @@ class Class {
     val starting_equipment: List<StartingEquipment> = emptyList()
     val starting_equipment_options : List<Starting_equipment_options> = emptyList()
     val class_levels : String = ""
-    val multi_classing : Multi_classing = Multi_classing()
+    val multi_classing : MultiClassing = MultiClassing()
     val subclasses: APIResourceList = APIResourceList()
     val spellcastingClass: Spellcasting_Class = Spellcasting_Class()
     val spells: String = ""
