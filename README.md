@@ -1,5 +1,6 @@
 # DnD5Directory
-
+made by Qnbie    
+*This project is made as an assignement for Kotlin based software development* 
 
 ## Overview    
 This is an API dictionary write in Kotlin with Ktor and TornadoFX for desktop.    
