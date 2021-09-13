@@ -4,6 +4,6 @@ import data.commonmodels.BaseModel
 import kotlinx.serialization.Serializable
 
 @Serializable
-class MagicSchools : BaseModel() {
+class MagicSchool : BaseModel() {
     val desc: String = ""
 }

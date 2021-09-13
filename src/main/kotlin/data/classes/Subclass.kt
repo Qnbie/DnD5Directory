@@ -10,12 +10,12 @@ class Subclass {
     val results: APIReference = APIReference()
     val subclass_flavor: String = ""
     val desc: List<String> = emptyList()
-    val spells: List<Spell> = emptyList()
+    val spells: List<SubclassSpell> = emptyList()
     val subclass_levels: String = ""
 }
 
 @Serializable
-class Spell {
+class SubclassSpell {
     val prerequisites: Prerequisites = Prerequisites()
     val spell: APIReference = APIReference()
 }

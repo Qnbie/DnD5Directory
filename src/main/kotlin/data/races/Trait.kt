@@ -6,7 +6,7 @@ import data.commonmodels.Choice
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Traits : BaseModel() {
+class Trait : BaseModel() {
     val races: List<APIReference> = emptyList()
     val subraces: List<APIReference> = emptyList()
     val desc: List<String> = emptyList()

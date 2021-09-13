@@ -8,7 +8,7 @@ The api which this project based on > http://www.dnd5eapi.co/
 
 ## Current status
 - [x] Represent all the data with classes
-- [ ] Implement all the possible API call
+- [x] Implement all the possible API call
 - [ ] Make a UI for all the data
 - [ ] Reales it for desktop
 

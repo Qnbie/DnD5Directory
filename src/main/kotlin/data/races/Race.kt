@@ -7,7 +7,7 @@ import data.commonmodels.Choice
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Races : BaseModel() {
+class Race : BaseModel() {
     val speed: Int = 0
     val ability_bonuses: List<AbilityBonus> = emptyList()
     val alignment: String = ""

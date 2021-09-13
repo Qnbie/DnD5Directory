@@ -4,7 +4,7 @@ import data.commonmodels.APIReference
 import data.commonmodels.AbilityBonus
 import data.commonmodels.Choice
 
-class Subraces {
+class Subrace {
     val race: APIReference = APIReference()
     val desc: String = ""
     val ability_bonuses: List<AbilityBonus> = emptyList()
