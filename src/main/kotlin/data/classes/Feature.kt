@@ -11,11 +11,11 @@ class Feature : BaseModel() {
     val classAPI: APIReference = APIReference()
     val subclass: APIReference = APIReference()
     val desc: List<String> = emptyList()
-    val feature_specific: Feature_specific = Feature_specific()
+    val feature_specific: FeatureSpecific = FeatureSpecific()
 }
 
 @Serializable
-class Feature_specific{
+class FeatureSpecific{
     val subfeature_options: Choice = Choice()
     val expertise_options: Choice = Choice()
 }

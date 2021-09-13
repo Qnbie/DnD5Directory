@@ -13,16 +13,16 @@ class Class {
     val proficiencies: List<APIReference> = emptyList()
     val saving_throws: List<APIReference> = emptyList()
     val starting_equipment: List<StartingEquipment> = emptyList()
-    val starting_equipment_options : List<Starting_equipment_options> = emptyList()
+    val starting_equipment_options : List<StartingEquipmentOptions> = emptyList()
     val class_levels : String = ""
     val multi_classing : MultiClassing = MultiClassing()
     val subclasses: APIResourceList = APIResourceList()
-    val spellcastingClass: Spellcasting_Class = Spellcasting_Class()
+    val spellcastingClass: SpellcastingClass = SpellcastingClass()
     val spells: String = ""
 }
 
 @Serializable
-class Spellcasting_Class {
+class SpellcastingClass {
     val level : Int = 0
     val spellcasting_ability : APIReference = APIReference()
     val info : List<Info> = emptyList()
@@ -41,10 +41,10 @@ class StartingEquipment {
 }
 
 @Serializable
-class Equipment : BaseModel(){}
+class Equipment : BaseModel()
 
 @Serializable
-class Starting_equipment_options {
+class StartingEquipmentOptions {
     val choose : Int = 0
     val type : String = ""
     val from : List<List<From>> = emptyList()
