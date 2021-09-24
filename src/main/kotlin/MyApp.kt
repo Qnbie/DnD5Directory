@@ -1,4 +1,5 @@
 
+import apicontroller.RestController.client
 import apicontroller.monsters.MonstersAPI
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
@@ -68,14 +69,6 @@ class ExampleApp : App() {
         stage.title = "Example"
         stage.scene = scene
         stage.show()
-        val client = HttpClient(CIO) {
-            install(JsonFeature) {
-                serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
-                    prettyPrint = true
-                    isLenient = true
-                })
-            }
-        }
         setup(hello, fab, client)
     }
 }
