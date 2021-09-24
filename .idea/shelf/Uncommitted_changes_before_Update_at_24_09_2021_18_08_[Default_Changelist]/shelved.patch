@@ -1,0 +1,281 @@
+Index: src/main/kotlin/MyApp.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javafx.beans.property.SimpleStringProperty\r\nimport javafx.collections.FXCollections\r\nimport tornadofx.*\r\n\r\nfun main(args: Array<String>) {\r\n    launch<MyApp>(args)\r\n}\r\n\r\nclass MyApp: App(MyView::class)\r\n\r\nclass MyView : View() {\r\n    val controller: MyController by inject()\r\n\r\n    override val root = vbox {\r\n        label(\"My items\")\r\n        listview(controller.values)\r\n    }\r\n}\r\n\r\nclass MyController: Controller() {\r\n    val values = FXCollections.observableArrayList(\"Alpha\",\"Beta\",\"Gamma\",\"Delta\")\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/MyApp.kt b/src/main/kotlin/MyApp.kt
+--- a/src/main/kotlin/MyApp.kt	(revision 931faa41fb009cf1522b9eb72d4775247309625e)
++++ b/src/main/kotlin/MyApp.kt	(date 1632411333893)
+@@ -1,22 +1,37 @@
++import apicontroller.RestController
++import apicontroller.RestController.client
++import apicontroller.equipment.EquipmentAPI
++import apicontroller.monsters.MonstersAPI
++import apicontroller.races.RacesAPI
+ import javafx.beans.property.SimpleStringProperty
+ import javafx.collections.FXCollections
++import kotlinx.coroutines.*
+ import tornadofx.*
++import kotlin.coroutines.Continuation
+ 
+-fun main(args: Array<String>) {
+-    launch<MyApp>(args)
++val scope = CoroutineScope(Dispatchers.IO)
++
++suspend fun main(args: Array<String>) {
++    coroutineScope {
++        val list = async {
++            MonstersAPI(client).getMonster("adult-black-dragon")
++        }
++        print(list.await().name)
++        launch<MyApp>(args)
++    }
+ }
+ 
+-class MyApp: App(MyView::class)
++class MyApp: App(MyView::class){
++
++}
+ 
+ class MyView : View() {
+     val controller: MyController by inject()
+ 
+     override val root = vbox {
+         label("My items")
+-        listview(controller.values)
+     }
+ }
+ 
+ class MyController: Controller() {
+-    val values = FXCollections.observableArrayList("Alpha","Beta","Gamma","Delta")
+ }
+\ No newline at end of file
+Index: src/main/kotlin/main.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import data.commonmodels.APIResourceList\r\nimport io.ktor.client.*\r\nimport io.ktor.client.engine.cio.*\r\nimport io.ktor.client.features.json.*\r\nimport io.ktor.client.features.json.serializer.*\r\nimport apicontroller.characterdata.AbilityScoresAPI\r\n\r\nsuspend fun main() {\r\n    val client = HttpClient(CIO) {\r\n        install(JsonFeature) {\r\n            serializer = KotlinxSerializer(kotlinx.serialization.json.Json {\r\n                prettyPrint = true\r\n                isLenient = true\r\n            })\r\n        }\r\n    }\r\n\r\n    val reqer = AbilityScoresAPI(client)\r\n    val response: APIResourceList = reqer.getResourceList()\r\n    println(response.results[3].name)\r\n    client.close()\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/main.kt b/src/main/kotlin/main.kt
+--- a/src/main/kotlin/main.kt	(revision 931faa41fb009cf1522b9eb72d4775247309625e)
++++ b/src/main/kotlin/main.kt	(date 1631886859172)
+@@ -1,3 +1,5 @@
++import apicontroller.RestController
++import apicontroller.RestController.client
+ import data.commonmodels.APIResourceList
+ import io.ktor.client.*
+ import io.ktor.client.engine.cio.*
+@@ -6,15 +8,6 @@
+ import apicontroller.characterdata.AbilityScoresAPI
+ 
+ suspend fun main() {
+-    val client = HttpClient(CIO) {
+-        install(JsonFeature) {
+-            serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
+-                prettyPrint = true
+-                isLenient = true
+-            })
+-        }
+-    }
+-
+     val reqer = AbilityScoresAPI(client)
+     val response: APIResourceList = reqer.getResourceList()
+     println(response.results[3].name)
+Index: src/main/kotlin/ui/tets.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/ui/tets.kt b/src/main/kotlin/ui/tets.kt
+new file mode 100644
+--- /dev/null	(date 1631885633549)
++++ b/src/main/kotlin/ui/tets.kt	(date 1631885633549)
+@@ -0,0 +1,9 @@
++package ui
++
++import tornadofx.*
++
++class tets : View("My View") {
++    override val root = borderpane {
++        
++    }
++}
+Index: .idea/modules/DnD5Directory.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/DnD5Directory.main.iml b/.idea/modules/DnD5Directory.main.iml
+new file mode 100644
+--- /dev/null	(date 1631885633908)
++++ b/.idea/modules/DnD5Directory.main.iml	(date 1631885633908)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module version="4">
++  <component name="FacetManager">
++    <facet type="TornadoFX" name="TornadoFX">
++      <configuration />
++    </facet>
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"06311c40-245c-4ad8-97c1-4685563ed037\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/MyApp.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.gitignore\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/compiler.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/gradle.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/jarRepositories.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build.gradle.kts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/settings.gradle.kts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/settings.gradle\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Kotlin Data Class\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"Kotlin Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"jdkForImporter\" value=\"#USE_PROJECT_JDK\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1y2o2R0d76J0ia9B2WeMJBm9yeW\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"run.code.analysis.last.selected.profile\" value=\"pProject Default\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settings.project.maven.importing\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateKotlinClassDialog.RecentsKey\">\r\n      <recent name=\"data.classes\" />\r\n      <recent name=\"Data\" />\r\n    </key>\r\n    <key name=\"MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY\">\r\n      <recent name=\"data.commonmodels\" />\r\n      <recent name=\"data.characterdata\" />\r\n      <recent name=\"data\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.MyAppKt\">\r\n    <configuration name=\"ApplicationKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DnD5Directory.main\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ApplicationKt\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MainKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DnD5Directory.main\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"Kotlin SDK\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MainKt\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MyAppKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DnD5Directory.main\" />\r\n      <option name=\"VM_PARAMETERS\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MyAppKt\" />\r\n      <option name=\"WORKING_DIRECTORY\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.ApplicationKt\" />\r\n      <item itemvalue=\"Application.MainKt\" />\r\n      <item itemvalue=\"Application.MyAppKt\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.MyAppKt\" />\r\n        <item itemvalue=\"Application.MainKt\" />\r\n        <item itemvalue=\"Application.ApplicationKt\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"06311c40-245c-4ad8-97c1-4685563ed037\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1631458838562</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1631458838562</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Hello World Setup\">\r\n      <created>1631459274169</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631459274169</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Package fix\">\r\n      <created>1631461991572</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631461991572</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Common models are created\">\r\n      <created>1631462379161</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631462379161</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Ripoff data classes and introduce BaseModel.kt\">\r\n      <created>1631464051981</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631464051981</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"CharacterData classes are done\">\r\n      <created>1631465165312</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631465165312</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"All the API data have been represented by a class\">\r\n      <created>1631474237354</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631474237354</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"CharacterData request classes are implemented\">\r\n      <created>1631478646148</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631478646148</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"API request classes are implemented\">\r\n      <created>1631480862138</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631480862138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Implement all API interface\">\r\n      <created>1631560314679</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631560314679</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"CodeCleanup\">\r\n      <created>1631561628514</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1631561628514</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Hello World Setup\" />\r\n    <MESSAGE value=\"Serialization is working\" />\r\n    <MESSAGE value=\"Package fix\" />\r\n    <MESSAGE value=\"Common models are created\" />\r\n    <MESSAGE value=\"Ripoff data classes and introduce BaseModel.kt\" />\r\n    <MESSAGE value=\"CharacterData classes are done\" />\r\n    <MESSAGE value=\"All the API data have been represented by a class\" />\r\n    <MESSAGE value=\"CharacterData request classes are implemented\" />\r\n    <MESSAGE value=\"API request classes are implemented\" />\r\n    <MESSAGE value=\"Implement all API interface\" />\r\n    <MESSAGE value=\"CodeCleanup\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"CodeCleanup\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 931faa41fb009cf1522b9eb72d4775247309625e)
++++ b/.idea/workspace.xml	(date 1631887237374)
+@@ -5,15 +5,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules/DnD5Directory.main.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/RestController.kt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/testUi.kt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/tets.kt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -43,6 +42,8 @@
+         <option value="Kotlin Data Class" />
+         <option value="Class" />
+         <option value="Kotlin Class" />
++        <option value="TornadoFX Code View" />
++        <option value="Kotlin Object" />
+       </list>
+     </option>
+   </component>
+@@ -75,8 +76,12 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
++    <property name="project.structure.last.edited" value="Modules" />
++    <property name="project.structure.proportion" value="0.0" />
++    <property name="project.structure.side.proportion" value="0.0" />
+     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
++    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CreateKotlinClassDialog.RecentsKey">
+@@ -130,15 +135,25 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="MyView" type="TORNADOFX_RUNCONFIGURATION" temporary="true" run-type="View" live-views="false" live-stylesheets="false" dump-stylesheets="false">
++      <option name="MAIN_CLASS_NAME" value="tornadofx.App" />
++      <module name="DnD5Directory.main" />
++      <option name="VIEW_CLASS_NAME" value="MyView" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <list>
+       <item itemvalue="Application.ApplicationKt" />
+       <item itemvalue="Application.MainKt" />
+       <item itemvalue="Application.MyAppKt" />
++      <item itemvalue="TornadoFX.MyView" />
+     </list>
+     <recent_temporary>
+       <list>
+         <item itemvalue="Application.MyAppKt" />
+         <item itemvalue="Application.MainKt" />
++        <item itemvalue="TornadoFX.MyView" />
+         <item itemvalue="Application.ApplicationKt" />
+       </list>
+     </recent_temporary>
+@@ -222,7 +237,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1631561628514</updated>
+     </task>
+-    <option name="localTasksCounter" value="11" />
++    <task id="LOCAL-00011" summary="TornadoFx is working">
++      <created>1631708643801</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1631708643801</updated>
++    </task>
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -249,6 +271,7 @@
+     <MESSAGE value="API request classes are implemented" />
+     <MESSAGE value="Implement all API interface" />
+     <MESSAGE value="CodeCleanup" />
+-    <option name="LAST_COMMIT_MESSAGE" value="CodeCleanup" />
++    <MESSAGE value="TornadoFx is working" />
++    <option name="LAST_COMMIT_MESSAGE" value="TornadoFx is working" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"$PROJECT_DIR$/../../Gradle/gradle-6.8.3\" />\r\n        <option name=\"gradleJvm\" value=\"11\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 931faa41fb009cf1522b9eb72d4775247309625e)
++++ b/.idea/gradle.xml	(date 1631881830855)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+Index: src/main/kotlin/apicontroller/RestController.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/apicontroller/RestController.kt b/src/main/kotlin/apicontroller/RestController.kt
+new file mode 100644
+--- /dev/null	(date 1631886307936)
++++ b/src/main/kotlin/apicontroller/RestController.kt	(date 1631886307936)
+@@ -0,0 +1,18 @@
++package apicontroller
++
++import io.ktor.client.*
++import io.ktor.client.engine.cio.*
++import io.ktor.client.features.json.*
++import io.ktor.client.features.json.serializer.*
++import kotlinx.serialization.json.Json
++
++object RestController {
++    val client = HttpClient(CIO) {
++        install(JsonFeature) {
++            serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
++                prettyPrint = true
++                isLenient = true
++            })
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/src/main/kotlin/ui/testUi.kt b/src/main/kotlin/ui/testUi.kt
+new file mode 100644
