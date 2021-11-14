@@ -7,7 +7,7 @@ import data.commonmodels.APIResourceList
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Class {
+class Class : BaseModel() {
     val hit_die: Int? = null
     val proficiency_choices: List<Choice>? = null
     val proficiencies: List<APIReference>? = null

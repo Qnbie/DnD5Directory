@@ -5,8 +5,7 @@ import data.commonmodels.APIReference
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Levels {
-    val index : String? = null
+class Levels : BaseModel() {
     val level : Int? = null
     val ability_score_bonuses : Int? = null
     val prof_bonus : Int? = null

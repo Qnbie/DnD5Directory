@@ -1,11 +1,12 @@
 package data.classes
 
 import data.commonmodels.APIReference
+import data.commonmodels.BaseModel
 import data.commonmodels.Prerequisites
 import kotlinx.serialization.Serializable
 
 @Serializable
-class Subclass {
+class Subclass : BaseModel(){
     val count : Int? = null
     val results: APIReference = APIReference()
     val subclass_flavor: String? = null

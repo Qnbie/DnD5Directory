@@ -2,9 +2,10 @@ package data.races
 
 import data.commonmodels.APIReference
 import data.commonmodels.AbilityBonus
+import data.commonmodels.BaseModel
 import data.commonmodels.Choice
 
-class Subrace {
+class Subrace: BaseModel() {
     val race: APIReference = APIReference()
     val desc: String? = null
     val ability_bonuses: List<AbilityBonus>? = null
