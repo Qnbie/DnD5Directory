@@ -6,10 +6,10 @@ import data.commonmodels.Choice
 
 class Subrace {
     val race: APIReference = APIReference()
-    val desc: String = ""
-    val ability_bonuses: List<AbilityBonus> = emptyList()
-    val starting_proficiencies: List<APIReference> = emptyList()
-    val languages: List<APIReference> = emptyList()
+    val desc: String? = null
+    val ability_bonuses: List<AbilityBonus>? = null
+    val starting_proficiencies: List<APIReference>? = null
+    val languages: List<APIReference>? = null
     val language_options: Choice = Choice()
-    val racial_traits: List<APIReference> = emptyList()
+    val racial_traits: List<APIReference>? = null
 }

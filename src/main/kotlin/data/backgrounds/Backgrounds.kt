@@ -7,10 +7,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Backgrounds : BaseModel() {
-    val starting_proficiencies: List<APIReference> = emptyList()
+    val starting_proficiencies: List<APIReference>? = null
     val language_options: Choice = Choice()
-    val starting_equipment: List<APIReference> = emptyList()
-    val starting_equipment_options: List<Choice> = emptyList()
+    val starting_equipment: List<APIReference>? = null
+    val starting_equipment_options: List<Choice>? = null
     val feature: BackgroundFeature = BackgroundFeature()
     val personality_traits: Choice = Choice()
     val ideals: Choice = Choice()

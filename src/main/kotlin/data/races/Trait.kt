@@ -7,10 +7,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Trait : BaseModel() {
-    val races: List<APIReference> = emptyList()
-    val subraces: List<APIReference> = emptyList()
-    val desc: List<String> = emptyList()
-    val proficiencies: List<APIReference> = emptyList()
+    val races: List<APIReference>? = null
+    val subraces: List<APIReference>? = null
+    val desc: List<String>? = null
+    val proficiencies: List<APIReference>? = null
     val proficiency_choices: Choice = Choice()
     // TODO trait_specific
 }

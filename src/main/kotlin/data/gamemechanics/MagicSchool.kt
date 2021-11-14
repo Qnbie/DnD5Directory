@@ -5,5 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class MagicSchool : BaseModel() {
-    val desc: String = ""
+    val desc: String? = null
 }

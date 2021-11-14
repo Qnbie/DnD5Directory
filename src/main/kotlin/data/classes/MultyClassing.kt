@@ -13,8 +13,8 @@ class MultiClassing {
 
 @Serializable
 class MultiClassingPrerequisites {
-    val prerequisites : List<Prerequisites> = emptyList()
-    val prerequisite_options : List<Choice> = emptyList()
-    val proficiencies: List<APIReference> = emptyList()
-    val proficiency_choices: List<Choice> = emptyList()
+    val prerequisites : List<Prerequisites>? = null
+    val prerequisite_options : List<Choice>? = null
+    val proficiencies: List<APIReference>? = null
+    val proficiency_choices: List<Choice>? = null
 }

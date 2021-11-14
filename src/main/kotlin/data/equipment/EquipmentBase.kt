@@ -9,5 +9,5 @@ import kotlinx.serialization.Serializable
 open class EquipmentBase : BaseModel() {
     val equipment_category: APIReference = APIReference()
     val cost: Cost = Cost()
-    val weight: Int = 0
+    val weight: Int? = null
 }

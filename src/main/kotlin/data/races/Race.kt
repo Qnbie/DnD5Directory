@@ -8,16 +8,16 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Race : BaseModel() {
-    val speed: Int = 0
-    val ability_bonuses: List<AbilityBonus> = emptyList()
-    val alignment: String = ""
-    val age: String = ""
-    val size: String = ""
-    val size_description: String = ""
-    val starting_proficiencies: List<APIReference> = emptyList()
+    val speed: Int? = null
+    val ability_bonuses: List<AbilityBonus>? = null
+    val alignment: String? = null
+    val age: String? = null
+    val size: String? = null
+    val size_description: String? = null
+    val starting_proficiencies: List<APIReference>? = null
     val starting_proficiency_options: Choice = Choice()
-    val languages: List<APIReference> = emptyList()
-    val language_desc: String = ""
-    val traits: List<APIReference> = emptyList()
-    val subraces: List<APIReference> = emptyList()
+    val languages: List<APIReference>? = null
+    val language_desc: String? = null
+    val traits: List<APIReference>? = null
+    val subraces: List<APIReference>? = null
 }

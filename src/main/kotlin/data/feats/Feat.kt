@@ -6,6 +6,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Feat : BaseModel(){
-    val prerequisites: List<Prerequisites> = emptyList()
-    val desc: List<String> = emptyList()
+    val prerequisites: List<Prerequisites>? = null
+    val desc: List<String>? = null
 }

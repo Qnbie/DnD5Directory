@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Damage {
-    val damage_dice: String = ""
+    val damage_dice: String? = null
     val damage_type: APIReference = APIReference()
 }

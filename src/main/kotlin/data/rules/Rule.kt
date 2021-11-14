@@ -6,6 +6,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Rule : BaseModel() {
-    val desc: String = ""
-    val subsections: List<APIReference> = emptyList()
+    val desc: String? = null
+    val subsections: List<APIReference>? = null
 }

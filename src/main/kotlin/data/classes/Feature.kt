@@ -7,10 +7,10 @@ import data.commonmodels.Choice
 
 @Serializable
 class Feature : BaseModel() {
-    val level : Int = 0
+    val level : Int? = null
     val classAPI: APIReference = APIReference()
     val subclass: APIReference = APIReference()
-    val desc: List<String> = emptyList()
+    val desc: List<String>? = null
     val feature_specific: FeatureSpecific = FeatureSpecific()
 }
 

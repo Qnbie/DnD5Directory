@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 class APIReference : BaseModel(){
     override fun toString(): String {
-        return name
+        return name.toString()
     }
 }

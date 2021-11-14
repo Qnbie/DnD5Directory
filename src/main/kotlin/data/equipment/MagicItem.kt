@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 class MagicItem : BaseModel() {
     val equipment_category: APIReference = APIReference()
-    val desc: List<String> = emptyList()
+    val desc: List<String>? = null
 }

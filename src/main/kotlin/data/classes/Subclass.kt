@@ -6,12 +6,12 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Subclass {
-    val count : Int = 0
+    val count : Int? = null
     val results: APIReference = APIReference()
-    val subclass_flavor: String = ""
-    val desc: List<String> = emptyList()
-    val spells: List<SubclassSpell> = emptyList()
-    val subclass_levels: String = ""
+    val subclass_flavor: String? = null
+    val desc: List<String>? = null
+    val spells: List<SubclassSpell>? = null
+    val subclass_levels: String? = null
 }
 
 @Serializable

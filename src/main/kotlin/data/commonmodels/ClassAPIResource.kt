@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class ClassAPIResource {
-    val index: String = ""
-    @SerialName("class") val classAPi: String = ""
-    val url: String = ""
+    val index: String? = null
+    @SerialName("class") val classAPi: String? = null
+    val url: String? = null
 }

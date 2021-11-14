@@ -6,7 +6,7 @@ import kotlinx.serialization.*
 
 @Serializable
 class AbilityScore : BaseModel() {
-    val full_name: String = ""
-    val desc: List<String> = emptyList()
-    val skills: List<APIReference> = emptyList()
+    val full_name: String? = null
+    val desc: List<String>? = null
+    val skills: List<APIReference>? = null
 }

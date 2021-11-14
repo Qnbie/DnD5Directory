@@ -7,32 +7,32 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Monster : BaseModel() {
-    val size: String = ""
-    val type: String = ""
-    val subtype: String = ""
-    val alignment: String = ""
-    val armor_class: Int = 0
-    val hit_points: Int = 0
-    val hit_dice: String = ""
+    val size: String? = null
+    val type: String? = null
+    val subtype: String? = null
+    val alignment: String? = null
+    val armor_class: Int? = null
+    val hit_points: Int? = null
+    val hit_dice: String? = null
     val forms: APIReference = APIReference()
     val speed: Speed = Speed()
-    val strength: Int = 0
-    val dexterity: Int = 0
-    val constitution: Int = 0
-    val intelligence: Int = 0
-    val wisdom: Int = 0
-    val charisma: Int = 0
-    val proficiencies: List<Proficienci> = emptyList()
-    val damage_vulnerabilities: List<String> = emptyList()
-    val damage_resistances: List<String> = emptyList()
-    val damage_immunities: List<String> = emptyList()
-    val condition_immunities: List<String> = emptyList()
+    val strength: Int? = null
+    val dexterity: Int? = null
+    val constitution: Int? = null
+    val intelligence: Int? = null
+    val wisdom: Int? = null
+    val charisma: Int? = null
+    val proficiencies: List<Proficienci>? = null
+    val damage_vulnerabilities: List<String>? = null
+    val damage_resistances: List<String>? = null
+    val damage_immunities: List<String>? = null
+    val condition_immunities: List<String>? = null
     val senses: Senses = Senses()
-    val languages: String = ""
-    val challenge_rating: Int = 0
-    val special_abilities: List<Action> = emptyList()
-    val actions: List<Action> = emptyList()
-    val legendary_actions: List<Action> = emptyList()
+    val languages: String? = null
+    val challenge_rating: Int? = null
+    val special_abilities: List<Action>? = null
+    val actions: List<Action>? = null
+    val legendary_actions: List<Action>? = null
 }
 
 @Serializable
@@ -43,12 +43,12 @@ class Proficienci {
 
 @Serializable
 class Senses {
-    val darkvision: String = ""
-    val passive_perception: Int = 0
+    val darkvision: String? = null
+    val passive_perception: Int? = null
 }
 
 @Serializable
 class Speed {
-    val walk: String = ""
-    val swim: String = ""
+    val walk: String? = null
+    val swim: String? = null
 }

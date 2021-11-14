@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class BackgroundFeature {
-    val desc: List<String> = emptyList()
-    val name: String = ""
+    val desc: List<String>? = null
+    val name: String? = null
 }

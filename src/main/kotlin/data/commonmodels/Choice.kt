@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Choice {
-    val choose: Int = 0
-    val type: String = ""
-    val from: List<APIReference> = emptyList()
+    val choose: Int? = null
+    val type: String? = null
+    val from: List<APIReference>? = null
     }

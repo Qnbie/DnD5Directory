@@ -7,19 +7,19 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Spell : BaseModel() {
-    val desc: List<String> = emptyList()
-    val higher_level: List<String> = emptyList()
-    val range: String = ""
-    val components: List<String> = emptyList()
-    val material: String = ""
+    val desc: List<String>? = null
+    val higher_level: List<String>? = null
+    val range: String? = null
+    val components: List<String>? = null
+    val material: String? = null
     val ritual: Boolean = false
-    val duration: String = ""
+    val duration: String? = null
     val concentration: Boolean = false
-    val casting_time: String = ""
-    val level: Int = 0
-    val attack_type: String = ""
+    val casting_time: String? = null
+    val level: Int? = null
+    val attack_type: String? = null
     val damage: Damage = Damage()
     val school: APIReference = APIReference()
     val classes: APIReference = APIReference()
-    val subclasses: List<APIReference> = emptyList()
+    val subclasses: List<APIReference>? = null
 }

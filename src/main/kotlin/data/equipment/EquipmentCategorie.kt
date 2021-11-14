@@ -6,5 +6,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class EquipmentCategorie : BaseModel() {
-    val equipment: List<APIReference> = emptyList()
+    val equipment: List<APIReference>? = null
 }

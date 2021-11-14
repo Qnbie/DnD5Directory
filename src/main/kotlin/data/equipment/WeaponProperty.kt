@@ -5,5 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class WeaponProperty : BaseModel() {
-    val desc: List<String> = emptyList()
+    val desc: List<String>? = null
 }

@@ -6,5 +6,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 class EquipmentPack : EquipmentBase(){
     val gear_category: APIReference = APIReference()
-    val contents: List<APIReference> = emptyList()
+    val contents: List<APIReference>? = null
 }
