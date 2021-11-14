@@ -13,46 +13,46 @@ class ClassesAPI() : APIControllerBase() {
     override var SITE_URL = "classes/"
 
     suspend fun getClass( index: String): Class{
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getSubclasses( index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/subclasses")
+        return client.get("$BASE_URL$SITE_URL$index/subclasses")
     }
 
     suspend fun getSpells(index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/spells")
+        return client.get("$BASE_URL$SITE_URL$index/spells")
     }
 
     suspend fun getSpellcasting(index: String): Spellcasting{
-        return client.get("$SITE_URL$BASE_URL$index/spellcasting")
+        return client.get("$BASE_URL$SITE_URL$index/spellcasting")
     }
 
     suspend fun getFeatures (index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/features")
+        return client.get("$BASE_URL$SITE_URL$index/features")
     }
 
     suspend fun getProficiencies  (index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/proficiencies")
+        return client.get("$BASE_URL$SITE_URL$index/proficiencies")
     }
 
     suspend fun getMultiClassing (index: String): MultiClassing{
-        return client.get("$SITE_URL$BASE_URL$index/multi-classing")
+        return client.get("$BASE_URL$SITE_URL$index/multi-classing")
     }
 
     suspend fun getLevels (index: String): List<Levels>{
-        return client.get("$SITE_URL$BASE_URL$index/levels")
+        return client.get("$BASE_URL$SITE_URL$index/levels")
     }
 
     suspend fun getLevels(index: String, level: Int): Levels{
-        return client.get("$SITE_URL$BASE_URL$index/levels/$level")
+        return client.get("$BASE_URL$SITE_URL$index/levels/$level")
     }
 
     suspend fun getLevelFeatures(index: String, level: Int): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/levels/$level/features")
+        return client.get("$BASE_URL$SITE_URL$index/levels/$level/features")
     }
 
     suspend fun getLevelSpells(index: String, level: Int): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/levels/$level/spells")
+        return client.get("$BASE_URL$SITE_URL$index/levels/$level/spells")
     }
 }

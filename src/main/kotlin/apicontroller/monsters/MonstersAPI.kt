@@ -11,10 +11,10 @@ class MonstersAPI() : APIControllerBase() {
     override var SITE_URL = "monsters/"
 
     suspend fun getMonster(index: String): Monster {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getMonstersByChallengeRating(challenge_rating: Int): APIResourceList {
-        return client.get("$SITE_URL$BASE_URL?challenge_rating=$challenge_rating")
+        return client.get("$BASE_URL$SITE_URL?challenge_rating=$challenge_rating")
     }
 }

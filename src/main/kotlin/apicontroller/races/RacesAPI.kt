@@ -10,18 +10,18 @@ class RacesAPI() : APIControllerBase() {
     override var SITE_URL = "races/"
 
     suspend fun getRace(index: String): Race{
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getSubraces(index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/subraces")
+        return client.get("$BASE_URL$SITE_URL$index/subraces")
     }
 
     suspend fun getProficiencies (index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/proficiencies")
+        return client.get("$BASE_URL$SITE_URL$index/proficiencies")
     }
 
     suspend fun getTraits (index: String): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/traits")
+        return client.get("$BASE_URL$SITE_URL$index/traits")
     }
 }

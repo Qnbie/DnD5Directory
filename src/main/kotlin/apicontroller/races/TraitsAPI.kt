@@ -10,6 +10,6 @@ class TraitsAPI() : APIControllerBase() {
     override var SITE_URL = "traits/"
 
     suspend fun getTrait(index: String): Trait {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

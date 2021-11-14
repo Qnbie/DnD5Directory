@@ -11,6 +11,6 @@ class RuleSectionsAPI() : APIControllerBase() {
     override var SITE_URL = "rule-sections/"
 
     suspend fun getRuleSections(index: String): RuleSections {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

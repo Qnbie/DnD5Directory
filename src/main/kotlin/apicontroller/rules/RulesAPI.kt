@@ -10,6 +10,6 @@ class RulesAPI() : APIControllerBase() {
     override var SITE_URL = "rules/"
 
     suspend fun getRule(index: String): Rule {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

@@ -9,7 +9,7 @@ class EquipmentCategoriesAPI() : APIControllerBase() {
     override var SITE_URL = "equipment-categories/"
 
     suspend fun getEquipmentCategory(index: String): EquipmentCategorie {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
 

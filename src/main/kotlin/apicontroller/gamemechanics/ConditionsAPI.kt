@@ -11,6 +11,6 @@ class ConditionsAPI() : APIControllerBase() {
     override var SITE_URL = "conditions/"
 
     suspend fun getCondition(index: String): Condition {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

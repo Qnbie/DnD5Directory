@@ -13,14 +13,14 @@ class EquipmentAPI() : APIControllerBase() {
     override var SITE_URL = "equipment/"
 
     suspend fun getWeapon(index: String): Weapon {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getArmor(index: String): Armor {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getEquipmentPack(index: String): EquipmentPack {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

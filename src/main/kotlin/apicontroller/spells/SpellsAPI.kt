@@ -11,14 +11,14 @@ class SpellsAPI() : APIControllerBase() {
     override var SITE_URL = "spells/"
 
     suspend fun getSpell(index: String): Spell {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getSpellsByLevel(level: Int): APIResourceList {
-        return client.get("$SITE_URL$BASE_URL?level=$level")
+        return client.get("$BASE_URL$SITE_URL?level=$level")
     }
 
     suspend fun getSpellsBySchool(school: String): APIResourceList {
-        return client.get("$SITE_URL$BASE_URL?school=$school")
+        return client.get("$BASE_URL$SITE_URL?school=$school")
     }
 }

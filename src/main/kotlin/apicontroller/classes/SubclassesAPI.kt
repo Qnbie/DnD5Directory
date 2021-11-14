@@ -16,18 +16,18 @@ class SubclassesAPI() : APIControllerBase() {
     }
 
     suspend fun getFeatures (index: String): APIResourceList {
-        return client.get("$SITE_URL$BASE_URL$index/features")
+        return client.get("$BASE_URL$SITE_URL$index/features")
     }
 
     suspend fun getLevels (index: String): List<Levels>{
-        return client.get("$SITE_URL$BASE_URL$index/levels")
+        return client.get("$BASE_URL$SITE_URL$index/levels")
     }
 
     suspend fun getLevels(index: String, level: Int): Levels {
-        return client.get("$SITE_URL$BASE_URL$index/levels/$level")
+        return client.get("$BASE_URL$SITE_URL$index/levels/$level")
     }
 
     suspend fun getLevelFeatures(index: String, level: Int): APIResourceList{
-        return client.get("$SITE_URL$BASE_URL$index/levels/$level/features")
+        return client.get("$BASE_URL$SITE_URL$index/levels/$level/features")
     }
 }

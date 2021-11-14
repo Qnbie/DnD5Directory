@@ -11,10 +11,10 @@ class FeatsAPI() : APIControllerBase() {
     override var SITE_URL = "feats/"
 
     suspend fun getFeat(index: String): Feat {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 
     suspend fun getFeatsByName(name: String): APIResourceList {
-        return client.get("$SITE_URL$BASE_URL?name=$name")
+        return client.get("$BASE_URL$SITE_URL?name=$name")
     }
 }

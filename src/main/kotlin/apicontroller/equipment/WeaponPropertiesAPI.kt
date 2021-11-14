@@ -10,6 +10,6 @@ class WeaponPropertiesAPI() : APIControllerBase() {
     override var SITE_URL = "weapon-properties/"
 
     suspend fun getWeaponProperty(index: String): WeaponProperty {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }

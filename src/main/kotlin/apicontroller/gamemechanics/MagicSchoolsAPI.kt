@@ -10,6 +10,6 @@ class MagicSchoolsAPI() : APIControllerBase() {
     override var SITE_URL = "magic-schools/"
 
     suspend fun getMagicSchool(index: String): MagicSchool {
-        return client.get("$SITE_URL$BASE_URL$index")
+        return client.get("$BASE_URL$SITE_URL$index")
     }
 }
