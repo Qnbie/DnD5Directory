@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Client remove from constructor and made static">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MonsterView.kt" afterDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Api controller wrong url builder bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MonsterView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MonsterView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -43,6 +47,7 @@
         <option value="Kotlin Data Class" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -76,11 +81,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="ui" />
       <recent name="data.classes" />
@@ -92,6 +102,9 @@
       <recent name="data.characterdata" />
       <recent name="data" />
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="apicontroller.monsters" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MyAppKt">
@@ -216,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636912915937</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="List view and refresh fregment are working">
+      <created>1636920590874</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1636920590874</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Api controller wrong url builder bug fix">
+      <created>1636923002765</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1636923002765</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +273,8 @@
     <MESSAGE value="Working asyncronous calls" />
     <MESSAGE value="Things" />
     <MESSAGE value="Client remove from constructor and made static" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client remove from constructor and made static" />
+    <MESSAGE value="List view and refresh fregment are working" />
+    <MESSAGE value="Api controller wrong url builder bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api controller wrong url builder bug fix" />
   </component>
 </project>

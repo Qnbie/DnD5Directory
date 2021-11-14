@@ -6,7 +6,7 @@ import tornadofx.*
 class MonsterView : View() {
 
     var monsterFragment = MonsterFragment("")
-    var apiResourceListView = APIResourceListView(listOf("elso", "masodik", "harmadik"), ::refresh)
+    var apiResourceListView = APIResourceListView(listOf("aboleth", "acolyte", "adult-blue-dragon"), ::refresh)
 
     override val root = hbox {
         this+= apiResourceListView
