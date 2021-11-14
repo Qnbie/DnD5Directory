@@ -1,5 +1,7 @@
-package ui.monster
-import apicontroller.monsters.MonstersAPI
+package ui.characterdata
+
+import apicontroller.characterdata.AlignmentsAPI
+import data.characterdata.Alignment
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
 import data.monsters.Monster
@@ -10,11 +12,10 @@ import kotlinx.coroutines.withContext
 import tornadofx.*
 import ui.ViewBase
 
-class MonsterView(apiResourceList: APIResourceList) : ViewBase<MonstersAPI>(apiResourceList) {
-    override val apiController: MonstersAPI by inject()
+class AlignmentsView(apiResourceList: APIResourceList) : ViewBase<AlignmentsAPI>(apiResourceList) {
+    override val apiController: AlignmentsAPI by inject()
 
     override suspend fun GetData(index: String): BaseModel {
-        return apiController.getMonster(index)
+        return apiController.getAlignment(index)
     }
-
 }

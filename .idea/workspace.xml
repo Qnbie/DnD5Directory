@@ -4,65 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Code clean up">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" afterDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Generic ViewBase.kt is working">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/backgrounds/BackgroundsView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AbilityScoresView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AlignmentsView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_09_2021_18_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_09_2021_18_08__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/BackgroundFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/BackgroundFeature.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/AbilityScore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/AbilityScore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Alignment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Alignment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Language.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Language.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Proficiency.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Proficiency.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Skill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Skill.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Class.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Feature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Feature.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Levels.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Levels.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/MultyClassing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/MultyClassing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Subclass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Subclass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/APIReference.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/APIReference.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/APIResourceList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/APIResourceList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/AbilityBonus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/AbilityBonus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/ApiHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/RestController.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Choice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Choice.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/ClassAPIResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/ClassAPIResource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Cost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Cost.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Damage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Damage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Prerequisites.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/Prerequisites.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/Armor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/Armor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentCategorie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentCategorie.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentPack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/EquipmentPack.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/MagicItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/MagicItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/Weapon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/Weapon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/equipment/WeaponProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/equipment/WeaponProperty.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/feats/Feat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/feats/Feat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/Condition.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/Condition.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/DamageType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/DamageType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/MagicSchool.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/gamemechanics/MagicSchool.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/monsters/Action.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/monsters/Action.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/monsters/Monster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/monsters/Monster.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/races/Race.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/races/Race.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/races/Subrace.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/races/Subrace.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/races/Trait.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/races/Trait.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/rules/Rule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/rules/Rule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/rules/RuleSections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/rules/RuleSections.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/spells/Spell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/spells/Spell.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/ButtonAction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/Example.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Example.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MonsterView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MyApp.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/corutine.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Footer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/Header.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/MainContent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/MainView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/ReferenceItemFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/ReferenceList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +58,10 @@
       <list>
         <option value="Kotlin Data Class" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="TestNG Test Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -136,15 +95,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="ui" />
@@ -159,21 +122,21 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="apicontroller.backgrounds" />
+      <recent name="test" />
       <recent name="apicontroller.monsters" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="MyAppKt" type="JetRunConfigurationType" temporary="true">
+    <configuration name="MyAppKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyAppKt" />
       <module name="DnD5Directory.main" />
-      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MyAppKt" />
         <item itemvalue="Kotlin.MyAppKt" />
       </list>
     </recent_temporary>
@@ -299,8 +262,52 @@
       <option name="project" value="LOCAL" />
       <updated>1636923171743</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Code clean up">
+      <created>1636924649583</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1636924649583</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add nullable to data classes">
+      <created>1636924672636</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1636924672636</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains:annotations" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-io-jvm" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-http-cio-jvm" />
+    <option featureType="dependencySupport" implementationName="java:javax.json:javax.json-api" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-base" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib-jdk7" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-client-core-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-controls" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib-common" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-utils-jvm" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-client-json-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish:javax.json" />
+    <option featureType="dependencySupport" implementationName="java:no.tornado:tornadofx" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-http-jvm" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-client-cio-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib" />
+    <option featureType="dependencySupport" implementationName="java:org.openjfx:javafx-graphics" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlinx:kotlinx-serialization-core-jvm" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-network-tls-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-reflect" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlinx:kotlinx-serialization-json-jvm" />
+    <option featureType="com.intellij.facetType" implementationName="TornadoFX" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-client-serialization-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlinx:kotlinx-coroutines-javafx" />
+    <option featureType="dependencySupport" implementationName="java:io.ktor:ktor-network-jvm" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -333,6 +340,8 @@
     <MESSAGE value="Api controller wrong url builder bug fix" />
     <MESSAGE value="Working UI prototype" />
     <MESSAGE value="Code clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code clean up" />
+    <MESSAGE value="add nullable to data classes" />
+    <MESSAGE value="Generic ViewBase.kt is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generic ViewBase.kt is working" />
   </component>
 </project>

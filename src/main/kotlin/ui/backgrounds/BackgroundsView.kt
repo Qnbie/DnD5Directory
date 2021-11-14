@@ -1,20 +1,20 @@
-package ui.monster
-import apicontroller.monsters.MonstersAPI
+package ui.backgrounds
+
+import apicontroller.backgrounds.BackgroundsAPI
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
-import data.monsters.Monster
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import tornadofx.*
+import ui.APIResourceListView
 import ui.ViewBase
 
-class MonsterView(apiResourceList: APIResourceList) : ViewBase<MonstersAPI>(apiResourceList) {
-    override val apiController: MonstersAPI by inject()
+class BackgroundsView(apiResourceList: APIResourceList) : ViewBase<BackgroundsAPI>(apiResourceList) {
+    override val apiController: BackgroundsAPI by inject()
 
     override suspend fun GetData(index: String): BaseModel {
-        return apiController.getMonster(index)
+        return apiController.getBackgrounds(index)
     }
-
 }

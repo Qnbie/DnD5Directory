@@ -1,9 +1,15 @@
 package ui
 
+import apicontroller.APIControllerBase
+import apicontroller.backgrounds.BackgroundsAPI
+import apicontroller.characterdata.LanguagesAPI
 import apicontroller.monsters.MonstersAPI
 import data.monsters.Monster
 import tornadofx.*
 import kotlinx.coroutines.*
+import kotlinx.coroutines.javafx.JavaFx
+import ui.backgrounds.BackgroundsView
+import ui.characterdata.LanguagesView
 import ui.monster.MonsterView
 
 class MainView: View() {
@@ -18,20 +24,31 @@ class MainView: View() {
     override val root = vbox {
         setPrefSize(400.0, 300.0)
 
-        button {
+            button("Language") {
             action {
-                runBlocking{
-                        val job = launch(Dispatchers.IO){
-                            thing = controller.getMonster("0")
+                runAsync {
+                    runBlocking (Dispatchers.Unconfined){
+                        val resourceList = LanguagesAPI().getResourceList()
+                        withContext(Dispatchers.JavaFx){
+                            replaceWith(LanguagesView(resourceList))
                         }
-                        job.join()
-
                     }
+                }
             }
         }
 
-
-        this += MonsterView()
+        button("Monsters") {
+            action {
+                runAsync {
+                    runBlocking (Dispatchers.Unconfined){
+                        val resourceList = MonstersAPI().getResourceList()
+                        withContext(Dispatchers.JavaFx){
+                            replaceWith(MonsterView(resourceList))
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
