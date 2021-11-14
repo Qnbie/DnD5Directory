@@ -1,8 +1,7 @@
 package ui
 
 import apicontroller.monsters.MonstersAPI
-import data.commonmodels.APIResourceList
-import javafx.collections.FXCollections
+import data.monsters.Monster
 import tornadofx.*
 import kotlinx.coroutines.*
 
@@ -10,29 +9,28 @@ class MainView: View() {
 
     private val controller: MonstersAPI by inject()
 
-    private lateinit var thing: APIResourceList
+    private lateinit var thing: Monster
 
+    var monster1 = "Monster1"
+    var monster2 = "Monster2"
 
     override val root = vbox {
         setPrefSize(400.0, 300.0)
 
         button {
             action {
-                runAsync{
-                    runBlocking{
+                runBlocking{
                         val job = launch(Dispatchers.IO){
-                            thing = controller.getResourceList()
+                            thing = controller.getMonster("0")
                         }
                         job.join()
-                        text = thing.count.toString()
+
                     }
-                }
             }
         }
 
-        label ("thing.count")
 
-        //listview (FXCollections.observableArrayList( controller.getResourceList().results))
+        this += MonsterView()
     }
 
 }

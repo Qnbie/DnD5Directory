@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Things">
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Client remove from constructor and made static">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MonsterView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +87,7 @@
       <recent name="Data" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ui" />
       <recent name="data.commonmodels" />
       <recent name="data.characterdata" />
       <recent name="data" />
@@ -206,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636911172087</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Client remove from constructor and made static">
+      <created>1636912915937</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636912915937</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +245,7 @@
     <MESSAGE value="CodeCleanup" />
     <MESSAGE value="Working asyncronous calls" />
     <MESSAGE value="Things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Things" />
+    <MESSAGE value="Client remove from constructor and made static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client remove from constructor and made static" />
   </component>
 </project>
