@@ -9,7 +9,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class EquipmentAPI(client: HttpClient) : APIControllerBase(client) {
+class EquipmentAPI() : APIControllerBase() {
     override var SITE_URL = "equipment/"
 
     suspend fun getWeapon(index: String): Weapon {

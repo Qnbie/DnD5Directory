@@ -5,7 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import apicontroller.APIControllerBase
 
-class AlignmentsAPI(client: HttpClient) : APIControllerBase(client) {
+class AlignmentsAPI() : APIControllerBase() {
 
     override var SITE_URL = "alignment/"
 

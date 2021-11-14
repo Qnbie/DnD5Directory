@@ -5,7 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import apicontroller.APIControllerBase
 
-class AbilityScoresAPI (client: HttpClient) : APIControllerBase(client) {
+class AbilityScoresAPI () : APIControllerBase() {
 
     override var SITE_URL = "ability-scores/"
 

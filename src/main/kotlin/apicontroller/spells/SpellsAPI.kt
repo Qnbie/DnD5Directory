@@ -7,7 +7,7 @@ import data.spells.Spell
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class SpellsAPI(client: HttpClient) : APIControllerBase(client) {
+class SpellsAPI() : APIControllerBase() {
     override var SITE_URL = "spells/"
 
     suspend fun getSpell(index: String): Spell {

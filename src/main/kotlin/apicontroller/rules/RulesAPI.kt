@@ -6,7 +6,7 @@ import data.rules.Rule
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class RulesAPI(client: HttpClient) : APIControllerBase(client) {
+class RulesAPI() : APIControllerBase() {
     override var SITE_URL = "rules/"
 
     suspend fun getRule(index: String): Rule {

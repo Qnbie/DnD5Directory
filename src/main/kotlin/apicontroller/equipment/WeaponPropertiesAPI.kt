@@ -6,7 +6,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class WeaponPropertiesAPI(client: HttpClient) : APIControllerBase(client) {
+class WeaponPropertiesAPI() : APIControllerBase() {
     override var SITE_URL = "weapon-properties/"
 
     suspend fun getWeaponProperty(index: String): WeaponProperty {

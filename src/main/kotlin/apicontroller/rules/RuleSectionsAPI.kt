@@ -7,7 +7,7 @@ import data.rules.RuleSections
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class RuleSectionsAPI(client: HttpClient) : APIControllerBase(client) {
+class RuleSectionsAPI() : APIControllerBase() {
     override var SITE_URL = "rule-sections/"
 
     suspend fun getRuleSections(index: String): RuleSections {

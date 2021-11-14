@@ -7,7 +7,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class FeatsAPI(client: HttpClient) : APIControllerBase(client) {
+class FeatsAPI() : APIControllerBase() {
     override var SITE_URL = "feats/"
 
     suspend fun getFeat(index: String): Feat {

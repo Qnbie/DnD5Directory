@@ -9,7 +9,7 @@ import data.commonmodels.APIResourceList
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class ClassesAPI(client: HttpClient) : APIControllerBase(client) {
+class ClassesAPI() : APIControllerBase() {
     override var SITE_URL = "classes/"
 
     suspend fun getClass( index: String): Class{

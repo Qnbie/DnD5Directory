@@ -7,7 +7,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class ConditionsAPI(client: HttpClient) : APIControllerBase(client) {
+class ConditionsAPI() : APIControllerBase() {
     override var SITE_URL = "conditions/"
 
     suspend fun getCondition(index: String): Condition {

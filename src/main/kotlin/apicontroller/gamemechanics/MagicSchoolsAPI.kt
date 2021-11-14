@@ -6,7 +6,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class MagicSchoolsAPI(client: HttpClient) : APIControllerBase(client) {
+class MagicSchoolsAPI() : APIControllerBase() {
     override var SITE_URL = "magic-schools/"
 
     suspend fun getMagicSchool(index: String): MagicSchool {

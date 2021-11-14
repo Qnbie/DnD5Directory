@@ -5,7 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import apicontroller.APIControllerBase
 
-class ProficienciesAPI(client: HttpClient) : APIControllerBase(client) {
+class ProficienciesAPI() : APIControllerBase() {
 
     override var SITE_URL = "proficiencies/"
 

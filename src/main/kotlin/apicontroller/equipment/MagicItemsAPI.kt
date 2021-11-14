@@ -6,7 +6,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class MagicItemsAPI(client: HttpClient) : APIControllerBase(client) {
+class MagicItemsAPI() : APIControllerBase() {
     override var SITE_URL = "magic-items/"
 
     suspend fun getMagicItem(index: String): MagicItem {

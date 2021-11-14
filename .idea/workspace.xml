@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Working asyncronous calls">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/ApiHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/ButtonAction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/Example.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MyApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/corutine.kt" afterDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632426008537</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Things">
+      <created>1636911172087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1636911172087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +234,7 @@
     <MESSAGE value="Implement all API interface" />
     <MESSAGE value="CodeCleanup" />
     <MESSAGE value="Working asyncronous calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working asyncronous calls" />
+    <MESSAGE value="Things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Things" />
   </component>
 </project>

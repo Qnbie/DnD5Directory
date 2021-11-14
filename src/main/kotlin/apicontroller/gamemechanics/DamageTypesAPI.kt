@@ -6,7 +6,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class DamageTypesAPI(client: HttpClient) : APIControllerBase(client) {
+class DamageTypesAPI() : APIControllerBase() {
     override var SITE_URL = "damage-types/"
 
     suspend fun getDamageType(index: String): DamageType {

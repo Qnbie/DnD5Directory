@@ -8,7 +8,7 @@ import data.commonmodels.APIResourceList
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class SubclassesAPI(client: HttpClient) : APIControllerBase(client) {
+class SubclassesAPI() : APIControllerBase() {
     override var SITE_URL = "subclasses/"
 
     suspend fun getSubclass(index : String) : Subclass{

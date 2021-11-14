@@ -5,7 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import apicontroller.APIControllerBase
 
-class BackgroundsAPI(client: HttpClient) : APIControllerBase(client) {
+class BackgroundsAPI() : APIControllerBase() {
 
     override var SITE_URL= "backgrounds/"
 

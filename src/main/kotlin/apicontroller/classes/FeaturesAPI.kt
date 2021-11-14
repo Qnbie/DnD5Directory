@@ -5,7 +5,7 @@ import data.classes.Feature
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class FeaturesAPI(client: HttpClient) : APIControllerBase(client) {
+class FeaturesAPI() : APIControllerBase() {
     override var SITE_URL = "features/"
 
     suspend fun getFeature(index: String) : Feature{
