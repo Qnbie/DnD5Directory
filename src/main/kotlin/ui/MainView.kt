@@ -4,6 +4,7 @@ import apicontroller.monsters.MonstersAPI
 import data.monsters.Monster
 import tornadofx.*
 import kotlinx.coroutines.*
+import ui.monster.MonsterView
 
 class MainView: View() {
 
