@@ -21,10 +21,10 @@ It contains all the data model which been used by the api.
 `apicontroller`   
 It contains all the api reqests.
 
-`ui.view`
+`ui.view`   
 It contains the view logic for the data pages.
 
-`ui.fragment`
+`ui.fragment`   
 It contains the ui element structures and formatings.
 
 *More namespace definiton will comming as soon as they implemented*
