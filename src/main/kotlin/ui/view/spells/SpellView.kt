@@ -3,6 +3,9 @@ package ui.view.spells
 import apicontroller.spells.SpellsAPI
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
+import data.spells.Spell
+import tornadofx.Fragment
+import ui.fragment.spells.SpellFragment
 import ui.view.ViewBase
 
 class SpellView(apiResourceList: APIResourceList) : ViewBase<SpellsAPI>(apiResourceList) {
@@ -10,5 +13,9 @@ class SpellView(apiResourceList: APIResourceList) : ViewBase<SpellsAPI>(apiResou
 
     override suspend fun GetData(index: String): BaseModel {
         return apiController.getSpell(index)
+    }
+
+    override fun DataFragment(data: BaseModel): Fragment {
+        return SpellFragment(data as Spell)
     }
 }

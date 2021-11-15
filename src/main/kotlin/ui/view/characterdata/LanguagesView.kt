@@ -4,11 +4,9 @@ import apicontroller.characterdata.LanguagesAPI
 import data.characterdata.Language
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
-import data.rules.Rule
 import tornadofx.*
-import ui.fragment.LanguagesFragment
+import ui.fragment.characterdata.LanguagesFragment
 import ui.view.ViewBase
-import ui.view.rules.RuleView
 
 class LanguagesView(apiResourceList: APIResourceList): ViewBase<LanguagesAPI>(apiResourceList) {
     override val apiController: LanguagesAPI by inject()

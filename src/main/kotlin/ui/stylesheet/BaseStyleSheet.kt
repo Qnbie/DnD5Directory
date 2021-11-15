@@ -1,18 +1,19 @@
 import javafx.scene.layout.BorderStrokeStyle
 import javafx.scene.text.FontWeight
 import tornadofx.*
-import java.awt.Color.green
-import java.awt.Color.white
 
 class BaseStyleSheet : Stylesheet() {
 
     companion object {
-        val myHeader by cssclass()
+        val header by cssclass()
+        val description by cssclass()
+        val dice by cssclass()
+        val urlLink by cssclass()
         val listButton by cssclass()
     }
 
     init {
-        myHeader {
+        header {
             fontSize = 20.px
             fontWeight = FontWeight.BOLD
         }
@@ -20,6 +21,8 @@ class BaseStyleSheet : Stylesheet() {
         listButton {
             backgroundColor += c("#4CAF50")
             borderStyle += BorderStrokeStyle.NONE
+            fitToHeight = true
+            fitToWidth = true
         }
     }
 }

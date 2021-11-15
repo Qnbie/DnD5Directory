@@ -2,6 +2,9 @@ package ui.view.monster
 import apicontroller.monsters.MonstersAPI
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
+import data.monsters.Monster
+import tornadofx.Fragment
+import ui.fragment.monster.MonsterFragment
 import ui.view.ViewBase
 
 class MonsterView(apiResourceList: APIResourceList) : ViewBase<MonstersAPI>(apiResourceList) {
@@ -11,4 +14,7 @@ class MonsterView(apiResourceList: APIResourceList) : ViewBase<MonstersAPI>(apiR
         return apiController.getMonster(index)
     }
 
+    override fun DataFragment(data: BaseModel): Fragment {
+        return MonsterFragment(data as Monster)
+    }
 }

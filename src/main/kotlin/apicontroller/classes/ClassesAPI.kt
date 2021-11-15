@@ -1,18 +1,17 @@
 package apicontroller.classes
 
 import apicontroller.APIControllerBase
-import data.classes.Class
+import data.classes.Classes
 import data.classes.Levels
 import data.classes.MultiClassing
 import data.classes.Spellcasting
 import data.commonmodels.APIResourceList
-import io.ktor.client.*
 import io.ktor.client.request.*
 
 class ClassesAPI() : APIControllerBase() {
     override var SITE_URL = "classes/"
 
-    suspend fun getClass( index: String): Class{
+    suspend fun getClass( index: String): Classes{
         return client.get("$BASE_URL$SITE_URL$index")
     }
 

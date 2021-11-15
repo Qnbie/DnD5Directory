@@ -4,41 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="workspace.xml update">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/LanguagesFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/WaitFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/stylesheet/BaseStyleSheet.kt" afterDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="implement base style shhet and fix nameing spaces">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AbilityScoresFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/ClassFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/FeatureFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/SubclassesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/ArmorFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/APIResourceListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainMenu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/backgrounds/BackgroundsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AbilityScoresView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AlignmentsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/ProficiencyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/SkillView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/classes/ClassView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/classes/FeatureView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/classes/SubclassesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/SubclassesView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/ArmorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/EquipmentCategoryView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentCategoryView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/EquipmentPackView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentPackView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/MagicItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/MagicItemView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/WeaponPropertyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponPropertyView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/equipment/WeaponView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/feats/FeatView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/feats/FeatView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/gamemechanics/ConditionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/ConditionView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/gamemechanics/DamageTypeView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/DamageTypeView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/gamemechanics/MagicSchoolView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/MagicSchoolView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/monster/MonsterView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/races/RaceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/RaceView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/races/SubraceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/SubraceView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/races/TraitView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/TraitView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/rules/RuleSectionsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleSectionsView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/rules/RuleView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/spells/SpellView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/spells/SpellView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Classes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/LanguagesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/LanguagesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/stylesheet/BaseStyleSheet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/stylesheet/BaseStyleSheet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +77,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -134,11 +126,11 @@
       <recent name="Data" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ui.fragment.characterdata" />
       <recent name="ui.view" />
       <recent name="ui" />
       <recent name="data.commonmodels" />
       <recent name="data.characterdata" />
-      <recent name="data" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="apicontroller.backgrounds" />
@@ -323,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636968401515</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="implement base style shhet and fix nameing spaces">
+      <created>1636978535134</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1636978535134</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -392,6 +391,7 @@
     <MESSAGE value="All view class are implemented" />
     <MESSAGE value="Rid off the inner fregment class" />
     <MESSAGE value="workspace.xml update" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml update" />
+    <MESSAGE value="implement base style shhet and fix nameing spaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement base style shhet and fix nameing spaces" />
   </component>
 </project>

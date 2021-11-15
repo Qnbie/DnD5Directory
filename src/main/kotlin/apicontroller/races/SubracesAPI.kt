@@ -1,10 +1,8 @@
 package apicontroller.races
 
 import apicontroller.APIControllerBase
-import data.classes.Class
 import data.commonmodels.APIResourceList
 import data.races.Subrace
-import io.ktor.client.*
 import io.ktor.client.request.*
 
 class SubracesAPI() : APIControllerBase() {

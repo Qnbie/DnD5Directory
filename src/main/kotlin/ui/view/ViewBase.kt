@@ -1,6 +1,6 @@
 package ui.view
 
-import BaseStyleSheet.Companion.myHeader
+import BaseStyleSheet.Companion.header
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
 import kotlinx.coroutines.Dispatchers
@@ -39,10 +39,10 @@ abstract class ViewBase<T: Controller>(apiResourceList: APIResourceList) : View(
 
     abstract suspend fun GetData(index: String): BaseModel
 
-    open fun DataFragment(data: BaseModel = BaseModel()): Fragment {
+    open fun DataFragment(data: BaseModel): Fragment {
         return builderFragment {
             label (data.name){
-                addClass (myHeader)
+                addClass (header)
             }
         }
     }
