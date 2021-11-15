@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="All view class are implemented">
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Rid off the inner fregment class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636932838885</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Rid off the inner fregment class">
+      <created>1636934803257</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1636934803257</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -346,6 +350,7 @@
     <MESSAGE value="add nullable to data classes" />
     <MESSAGE value="Generic ViewBase.kt is working" />
     <MESSAGE value="All view class are implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="All view class are implemented" />
+    <MESSAGE value="Rid off the inner fregment class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rid off the inner fregment class" />
   </component>
 </project>
