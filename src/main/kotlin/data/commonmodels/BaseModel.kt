@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 open class BaseModel {
     val index: String = ""
-    val name: String = ""
+    var name: String = ""
     val url: String? = null
 }

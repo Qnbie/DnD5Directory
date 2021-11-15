@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Generic ViewBase.kt is working">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/backgrounds/BackgroundsView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AbilityScoresView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/AlignmentsView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_09_2021_18_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_09_2021_18_08__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="All view class are implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/ApiHandler.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/RestController.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/commonmodels/BaseModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/APIResourceListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/monster/MonsterView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/ViewBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/characterdata/LanguagesView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +46,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Data Class" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="TestNG Test Class" />
         <option value="Kotlin Interface" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -276,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636924672636</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Generic ViewBase.kt is working">
+      <created>1636930995839</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1636930995839</updated>
+    </task>
+    <task id="LOCAL-00020" summary="All view class are implemented">
+      <created>1636932838885</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1636932838885</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -342,6 +345,7 @@
     <MESSAGE value="Code clean up" />
     <MESSAGE value="add nullable to data classes" />
     <MESSAGE value="Generic ViewBase.kt is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generic ViewBase.kt is working" />
+    <MESSAGE value="All view class are implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="All view class are implemented" />
   </component>
 </project>

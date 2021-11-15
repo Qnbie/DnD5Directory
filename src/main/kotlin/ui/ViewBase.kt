@@ -5,6 +5,8 @@ import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
 import data.monsters.Monster
 import javafx.scene.Parent
+import javafx.scene.control.Control
+import javafx.scene.control.Label
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
@@ -36,7 +38,7 @@ abstract class ViewBase<T: Controller>(apiResourceList: APIResourceList) : View(
 
     abstract suspend fun GetData(index: String): BaseModel
 
-    inner class DataFragment(data: BaseModel = BaseModel()) : Fragment() {
-        override val root = label(data.name)
+    open fun DataFragment(data: BaseModel = BaseModel()): Fragment {
+        return builderFragment { label (data.name) }
     }
 }
