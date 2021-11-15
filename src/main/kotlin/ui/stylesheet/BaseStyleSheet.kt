@@ -5,7 +5,8 @@ import tornadofx.*
 class BaseStyleSheet : Stylesheet() {
 
     companion object {
-        val header by cssclass()
+        val pageTitle by cssclass()
+        val subTitle by cssclass()
         val description by cssclass()
         val dice by cssclass()
         val urlLink by cssclass()
@@ -13,10 +14,12 @@ class BaseStyleSheet : Stylesheet() {
     }
 
     init {
-        header {
+        pageTitle {
             fontSize = 20.px
             fontWeight = FontWeight.BOLD
         }
+
+
 
         listButton {
             backgroundColor += c("#4CAF50")

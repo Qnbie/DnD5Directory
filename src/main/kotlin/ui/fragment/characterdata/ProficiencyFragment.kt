@@ -1,13 +1,20 @@
 package ui.fragment.characterdata
 
 import data.characterdata.Proficiency
-import javafx.scene.Parent
-import tornadofx.Fragment
-import tornadofx.label
-import tornadofx.vbox
+import tornadofx.*
+import ui.fragment.FragmentBase
 
-class ProficiencyFragment(proficiency: Proficiency): Fragment() {
+class ProficiencyFragment(proficiency: Proficiency): FragmentBase() {
     override val root = vbox{
-        label(proficiency.name)
+        this += PageTitle(proficiency.name)
+        this += TypeField("Proficency type", proficiency.type)
+        this += SubTitle("Classes that start with ${proficiency.name}.")
+        this += ResourceList(proficiency.classes, fun(index: String){
+            // todo
+        })
+        this += SubTitle("Races that start with ${proficiency.name}.")
+        this += ResourceList(proficiency.races, fun(index: String){
+            // todo
+        })
     }
 }

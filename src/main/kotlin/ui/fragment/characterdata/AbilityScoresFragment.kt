@@ -1,14 +1,15 @@
 package ui.fragment.characterdata
 
-import BaseStyleSheet.Companion.header
 import data.characterdata.AbilityScore
 import tornadofx.*
+import ui.fragment.FragmentBase
 
-class AbilityScoresFragment(abilityScore: AbilityScore): Fragment() {
+class AbilityScoresFragment(abilityScore: AbilityScore): FragmentBase() {
     override val root = vbox{
-        label {
-            text("${abilityScore.full_name} (${abilityScore.name})")
-            addClass(header)
-        }
+        this += PageTitle("${abilityScore.full_name} (${abilityScore.name})")
+
+        this += Description(abilityScore.desc)
+
+
     }
 }

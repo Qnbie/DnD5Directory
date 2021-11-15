@@ -1,16 +1,14 @@
 package ui.fragment.rules
 
 import data.rules.Rule
-import javafx.scene.Parent
-import tornadofx.Fragment
-import tornadofx.label
-import tornadofx.text
-import tornadofx.vbox
+import tornadofx.*
+import ui.fragment.FragmentBase
 
-class RuleFragment(rule: Rule): Fragment() {
+class RuleFragment(rule: Rule): FragmentBase() {
     override val root = vbox {
-        label {
-            text(rule.name)
-        }
+        this += PageTitle(rule.name)
+        this += Description(listOf(rule.desc))
+        this += SubTitle("Subsections")
+        this += ResourceList(rule.subsections, fun(index:String){})
     }
 }

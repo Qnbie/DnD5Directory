@@ -5,5 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class RuleSections : BaseModel() {
-    val desc: String? = null
+    val desc: String = "null"
 }

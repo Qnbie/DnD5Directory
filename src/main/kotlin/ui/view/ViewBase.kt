@@ -1,6 +1,6 @@
 package ui.view
 
-import BaseStyleSheet.Companion.header
+import BaseStyleSheet.Companion.pageTitle
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
 import kotlinx.coroutines.Dispatchers
@@ -42,7 +42,7 @@ abstract class ViewBase<T: Controller>(apiResourceList: APIResourceList) : View(
     open fun DataFragment(data: BaseModel): Fragment {
         return builderFragment {
             label (data.name){
-                addClass (header)
+                addClass (pageTitle)
             }
         }
     }

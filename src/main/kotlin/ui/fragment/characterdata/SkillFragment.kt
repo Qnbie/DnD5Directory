@@ -1,13 +1,16 @@
 package ui.fragment.characterdata
 
 import data.characterdata.Skill
-import javafx.scene.Parent
-import tornadofx.Fragment
-import tornadofx.label
-import tornadofx.vbox
+import tornadofx.*
+import ui.fragment.FragmentBase
 
-class SkillFragment(skill: Skill): Fragment() {
+class SkillFragment(skill: Skill): FragmentBase() {
     override val root = vbox{
-        label(skill.name)
+        this += PageTitle(skill.name)
+        this += Description(skill.desc)
+        this += SubTitle("The ability score associated with ${skill.name}.")
+        this += ResourceList(skill.abilityScores,fun(index:String){
+            //todo
+        })
     }
 }

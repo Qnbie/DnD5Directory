@@ -4,32 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="implement base style shhet and fix nameing spaces">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AbilityScoresFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/ClassFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/FeatureFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/SubclassesFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/ArmorFragment.kt" afterDir="false" />
+    <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="Setup Fragments">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/FragmentBase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/classes/Class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/classes/Classes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/LanguagesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/LanguagesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/BackgroundFeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/BackgroundFeature.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/AbilityScore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/AbilityScore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Alignment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Alignment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Language.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Language.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Proficiency.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Proficiency.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Skill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/characterdata/Skill.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/feats/Feat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/feats/Feat.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/rules/Rule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/rules/Rule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/rules/RuleSections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/rules/RuleSections.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AbilityScoresFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AbilityScoresFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/LanguagesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/LanguagesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/feats/FeatFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/feats/FeatFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/RaceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/RaceFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleSectionsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleSectionsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/stylesheet/BaseStyleSheet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/stylesheet/BaseStyleSheet.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636978535134</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Setup Fragments">
+      <created>1636985301196</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1636985301196</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -392,6 +398,7 @@
     <MESSAGE value="Rid off the inner fregment class" />
     <MESSAGE value="workspace.xml update" />
     <MESSAGE value="implement base style shhet and fix nameing spaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement base style shhet and fix nameing spaces" />
+    <MESSAGE value="Setup Fragments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Fragments" />
   </component>
 </project>

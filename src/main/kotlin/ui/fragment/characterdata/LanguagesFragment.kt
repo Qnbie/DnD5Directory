@@ -1,18 +1,21 @@
 package ui.fragment.characterdata
 
-import BaseStyleSheet.Companion.header
 import data.characterdata.Language
-import tornadofx.Fragment
-import tornadofx.addClass
-import tornadofx.hbox
-import tornadofx.label
+import tornadofx.*
+import ui.fragment.FragmentBase
 
-class LanguagesFragment(languageData: Language) : Fragment() {
-    override val root = hbox {
-        label(languageData.name){
-            addClass(header)
+class LanguagesFragment(languageData: Language) : FragmentBase() {
+    override val root = vbox {
+        this += PageTitle(languageData.name)
+        label("LanguageType: ${languageData.type}")
+
+        label("Typical speaker")
+
+        for (speker in languageData.typical_speakers){
+            label(speker)
         }
 
-        languageData.type?.let { label(it) {  } }
+        label("Script: ${languageData.type}")
+
     }
 }

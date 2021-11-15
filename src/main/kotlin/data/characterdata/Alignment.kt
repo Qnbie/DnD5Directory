@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class Alignment : BaseModel() {
-    val abbreviation: String? = null
-    val desc: List<String>? = null
+    val abbreviation: String = ""
+    val desc: List<String> = emptyList()
 }
