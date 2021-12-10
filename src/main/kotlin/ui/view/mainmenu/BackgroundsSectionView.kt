@@ -8,7 +8,7 @@ import kotlinx.coroutines.withContext
 import tornadofx.*
 import ui.view.backgrounds.BackgroundsView
 
-class BackgroundsSectionView() : MainMenuBase() {
+class BackgroundsSectionView : MainMenuBase() {
     override val root = vbox {
         this += SectionTitle("Backgrounds")
         this += SectionButton("Backgrounds",fun (){

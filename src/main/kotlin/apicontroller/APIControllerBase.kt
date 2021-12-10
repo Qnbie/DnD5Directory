@@ -3,13 +3,9 @@ package apicontroller
 import data.commonmodels.APIResourceList
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
-import io.ktor.client.features.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
 import io.ktor.client.request.*
-import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import tornadofx.Controller
 
 abstract class APIControllerBase protected constructor() : Controller(){

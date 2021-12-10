@@ -1,7 +1,6 @@
 package ui.fragment.gamemechanics
 
 import data.gamemechanics.DamageType
-import javafx.scene.Parent
 import tornadofx.Fragment
 import tornadofx.label
 import tornadofx.text

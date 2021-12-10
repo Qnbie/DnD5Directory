@@ -5,11 +5,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import tornadofx.plusAssign
-import tornadofx.vbox
+import tornadofx.*
 import ui.view.feats.FeatView
 
-class FeatsSectionView() : MainMenuBase() {
+class FeatsSectionView : MainMenuBase() {
     override val root = vbox{
         this += SectionTitle("Feats")
         this += SectionButton("Feats",fun (){

@@ -7,13 +7,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import tornadofx.plusAssign
-import tornadofx.vbox
+import tornadofx.*
 import ui.view.gamemechanics.ConditionView
 import ui.view.gamemechanics.DamageTypeView
 import ui.view.gamemechanics.MagicSchoolView
 
-class GameMechanicsView() : MainMenuBase() {
+class GameMechanicsView : MainMenuBase() {
     override val root = vbox{
         this += SectionTitle("Game Mechanics")
         this += SectionButton("Conditions",fun (){

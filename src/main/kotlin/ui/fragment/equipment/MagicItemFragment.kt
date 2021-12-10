@@ -1,7 +1,6 @@
 package ui.fragment.equipment
 
 import data.equipment.MagicItem
-import javafx.scene.Parent
 import tornadofx.Fragment
 import tornadofx.label
 import tornadofx.text

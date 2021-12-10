@@ -2,7 +2,6 @@ package ui.fragment.feats
 
 import data.commonmodels.Prerequisites
 import data.feats.Feat
-import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
 import tornadofx.*
 import ui.fragment.FragmentBase

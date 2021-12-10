@@ -7,14 +7,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import tornadofx.label
-import tornadofx.plusAssign
-import tornadofx.vbox
+import tornadofx.*
 import ui.view.equipment.EquipmentCategoryView
 import ui.view.equipment.MagicItemView
 import ui.view.equipment.WeaponPropertyView
 
-class EquipmentSectionView() : MainMenuBase() {
+class EquipmentSectionView : MainMenuBase() {
     override val root = vbox {
         this += SectionTitle("Equipment")
         label("TODO")

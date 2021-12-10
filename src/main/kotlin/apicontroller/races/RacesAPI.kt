@@ -6,7 +6,7 @@ import data.races.Race
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class RacesAPI() : APIControllerBase() {
+class RacesAPI : APIControllerBase() {
     override var SITE_URL = "races/"
 
     suspend fun getRace(index: String): Race{

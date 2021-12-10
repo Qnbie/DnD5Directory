@@ -5,7 +5,7 @@ import data.commonmodels.APIResourceList
 import data.races.Subrace
 import io.ktor.client.request.*
 
-class SubracesAPI() : APIControllerBase() {
+class SubracesAPI : APIControllerBase() {
     override var SITE_URL = "subraces/"
 
     suspend fun getSubrace( index: String): Subrace {

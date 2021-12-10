@@ -16,6 +16,6 @@ class BackgroundsView(apiResourceList: APIResourceList) : ViewBase<BackgroundsAP
     }
 
     override fun DataFragment(data: BaseModel): Fragment {
-        return BackgroundsFragment(data as Backgrounds);
+        return BackgroundsFragment(data as Backgrounds)
     }
 }

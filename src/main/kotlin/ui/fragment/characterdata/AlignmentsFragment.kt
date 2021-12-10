@@ -1,7 +1,6 @@
 package ui.fragment.characterdata
 
 import data.characterdata.Alignment
-import javafx.scene.Parent
 import tornadofx.*
 import ui.fragment.FragmentBase
 

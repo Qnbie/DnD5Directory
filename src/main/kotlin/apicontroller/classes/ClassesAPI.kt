@@ -8,7 +8,7 @@ import data.classes.Spellcasting
 import data.commonmodels.APIResourceList
 import io.ktor.client.request.*
 
-class ClassesAPI() : APIControllerBase() {
+class ClassesAPI : APIControllerBase() {
     override var SITE_URL = "classes/"
 
     suspend fun getClass( index: String): Classes{

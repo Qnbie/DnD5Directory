@@ -5,7 +5,7 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import apicontroller.APIControllerBase
 
-class LanguagesAPI() : APIControllerBase() {
+class LanguagesAPI : APIControllerBase() {
 
     override var SITE_URL = "languages/"
 

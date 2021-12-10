@@ -1,12 +1,10 @@
 package apicontroller.races
 
 import apicontroller.APIControllerBase
-import data.races.Race
 import data.races.Trait
-import io.ktor.client.*
 import io.ktor.client.request.*
 
-class TraitsAPI() : APIControllerBase() {
+class TraitsAPI : APIControllerBase() {
     override var SITE_URL = "traits/"
 
     suspend fun getTrait(index: String): Trait {

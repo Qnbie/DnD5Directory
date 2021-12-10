@@ -2,13 +2,11 @@ package apicontroller.classes
 
 import apicontroller.APIControllerBase
 import data.classes.Levels
-import data.classes.Spellcasting
 import data.classes.Subclass
 import data.commonmodels.APIResourceList
-import io.ktor.client.*
 import io.ktor.client.request.*
 
-class SubclassesAPI() : APIControllerBase() {
+class SubclassesAPI : APIControllerBase() {
     override var SITE_URL = "subclasses/"
 
     suspend fun getSubclass(index : String) : Subclass{

@@ -1,7 +1,6 @@
 package ui.fragment.races
 
 import data.races.Trait
-import javafx.scene.Parent
 import tornadofx.Fragment
 import tornadofx.label
 import tornadofx.text

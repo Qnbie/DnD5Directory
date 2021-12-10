@@ -2,12 +2,10 @@ package apicontroller.spells
 
 import apicontroller.APIControllerBase
 import data.commonmodels.APIResourceList
-import data.races.Race
 import data.spells.Spell
-import io.ktor.client.*
 import io.ktor.client.request.*
 
-class SpellsAPI() : APIControllerBase() {
+class SpellsAPI : APIControllerBase() {
     override var SITE_URL = "spells/"
 
     suspend fun getSpell(index: String): Spell {

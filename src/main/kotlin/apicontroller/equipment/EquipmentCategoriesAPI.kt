@@ -5,7 +5,7 @@ import data.equipment.EquipmentCategorie
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class EquipmentCategoriesAPI() : APIControllerBase() {
+class EquipmentCategoriesAPI : APIControllerBase() {
     override var SITE_URL = "equipment-categories/"
 
     suspend fun getEquipmentCategory(index: String): EquipmentCategorie {

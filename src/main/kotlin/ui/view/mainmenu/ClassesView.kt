@@ -7,13 +7,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import tornadofx.plusAssign
-import tornadofx.vbox
+import tornadofx.*
 import ui.view.classes.ClassView
 import ui.view.classes.FeatureView
 import ui.view.classes.SubclassesView
 
-class ClassesView() : MainMenuBase() {
+class ClassesView : MainMenuBase() {
     override val root = vbox {
         this += SectionTitle("Classe")
         this += SectionButton("Classes",fun (){

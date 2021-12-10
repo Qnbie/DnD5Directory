@@ -1,7 +1,6 @@
 package ui.fragment.monster
 
 import data.monsters.Monster
-import javafx.scene.Parent
 import tornadofx.Fragment
 import tornadofx.label
 import tornadofx.text

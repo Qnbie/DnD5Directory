@@ -6,12 +6,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.javafx.JavaFx
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import tornadofx.plusAssign
-import tornadofx.vbox
+import tornadofx.*
 import ui.view.rules.RuleSectionsView
 import ui.view.rules.RuleView
 
-class RulesSectionView() : MainMenuBase() {
+class RulesSectionView : MainMenuBase() {
     override val root = vbox {
         this += SectionTitle("Rules")
         this += SectionButton("Rules",fun (){

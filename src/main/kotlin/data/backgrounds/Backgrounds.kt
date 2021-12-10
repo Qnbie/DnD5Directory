@@ -1,12 +1,9 @@
 package data.backgrounds
 
 import data.characterdata.Language
-import data.classes.Equipment
-import data.classes.StartingEquipment
 import data.commonmodels.BaseModel
 import data.commonmodels.APIReference
 import data.commonmodels.Choice
-import data.equipment.EquipmentCategorie
 import data.races.Trait
 import kotlinx.serialization.Serializable
 
