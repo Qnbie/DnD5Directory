@@ -1,51 +1,62 @@
 package ui
 
-import apicontroller.characterdata.LanguagesAPI
-import apicontroller.monsters.MonstersAPI
-import data.monsters.Monster
 import tornadofx.*
-import kotlinx.coroutines.*
-import kotlinx.coroutines.javafx.JavaFx
-import ui.view.characterdata.LanguagesView
-import ui.view.monster.MonsterView
+import ui.view.mainmenu.*
 
 class MainMenu: View() {
 
-    private val controller: MonstersAPI by inject()
-
-    private lateinit var thing: Monster
-
-    var monster1 = "Monster1"
-    var monster2 = "Monster2"
-
     override val root = vbox {
-        setPrefSize(400.0, 300.0)
+        setPrefSize(800.0, 800.0)
 
-            button("Language") {
+        button("Character Data") {
             action {
-                runAsync {
-                    runBlocking (Dispatchers.Unconfined){
-                        val resourceList = LanguagesAPI().getResourceList()
-                        withContext(Dispatchers.JavaFx){
-                            replaceWith(LanguagesView(resourceList))
-                        }
-                    }
-                }
+                replaceWith(CharacterDataView())
             }
         }
-
-        button("Monsters") {
+        button("Backgrounds") {
             action {
-                runAsync {
-                    runBlocking (Dispatchers.Unconfined){
-                        val resourceList = MonstersAPI().getResourceList()
-                        withContext(Dispatchers.JavaFx){
-                            replaceWith(MonsterView(resourceList))
-                        }
-                    }
-                }
+                replaceWith(BackgroundsSectionView())
+            }
+        }
+        button("Classes") {
+            action {
+                replaceWith(ClassesView())
+            }
+        }
+        button("Races") {
+            action {
+                replaceWith(RacesSectionView())
+            }
+        }
+        button("Equipment") {
+            action {
+                replaceWith(EquipmentSectionView())
+            }
+        }
+        button("Spells") {
+            action {
+                replaceWith(SpellsSectionView())
+            }
+        }
+        button("Feats") {
+            action {
+                replaceWith(FeatsSectionView())
+            }
+        }
+        button("Monster") {
+            action {
+                replaceWith(MonstersSectionView())
+            }
+        }
+        button("Game Mechanics") {
+            action {
+                replaceWith(GameMechanicsView())
+            }
+        }
+        button("Rules") {
+            action {
+                replaceWith(RulesSectionView())
             }
         }
     }
-
 }

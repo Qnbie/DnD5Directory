@@ -34,9 +34,11 @@ abstract class FragmentBase: Fragment() {
 
     fun Description(descList: List<String>): VBox {
         return vbox {
+            maxWidth = 400.0
+
             for (row in descList){
-                this += label {
-                    text(row)
+                this += label(row){
+                    isWrapText = true
                 }
             }
         }

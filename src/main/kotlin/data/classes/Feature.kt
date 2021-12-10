@@ -16,6 +16,6 @@ class Feature : BaseModel() {
 
 @Serializable
 class FeatureSpecific{
-    val subfeature_options: Choice = Choice()
-    val expertise_options: Choice = Choice()
+    val subfeature_options: Choice<String> = Choice()
+    val expertise_options: Choice<String> = Choice()
 }

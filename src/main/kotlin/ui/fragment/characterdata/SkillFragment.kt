@@ -9,7 +9,7 @@ class SkillFragment(skill: Skill): FragmentBase() {
         this += PageTitle(skill.name)
         this += Description(skill.desc)
         this += SubTitle("The ability score associated with ${skill.name}.")
-        this += ResourceList(skill.abilityScores,fun(index:String){
+        this += ResourceList(skill.ability_score,fun(index:String){
             //todo
         })
     }

@@ -7,5 +7,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 class Skill : BaseModel() {
     val desc: List<String> = emptyList()
-    val abilityScores: List<APIReference> = emptyList()
+    val ability_score: List<APIReference> = emptyList()
 }

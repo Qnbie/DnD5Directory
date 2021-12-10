@@ -1,5 +1,6 @@
 package data.classes
 
+import data.characterdata.Proficiency
 import data.commonmodels.BaseModel
 import data.commonmodels.APIReference
 import data.commonmodels.Choice
@@ -9,7 +10,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 class Classes : BaseModel() {
     val hit_die: Int? = null
-    val proficiency_choices: List<Choice>? = null
+    val proficiency_choices: List<Choice<Proficiency>>? = null
     val proficiencies: List<APIReference>? = null
     val saving_throws: List<APIReference>? = null
     val starting_equipment: List<StartingEquipment>? = null

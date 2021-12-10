@@ -1,5 +1,6 @@
 package data.races
 
+import data.characterdata.Proficiency
 import data.commonmodels.APIReference
 import data.commonmodels.AbilityBonus
 import data.commonmodels.BaseModel
@@ -15,7 +16,7 @@ class Race : BaseModel() {
     val size: String? = null
     val size_description: String? = null
     val starting_proficiencies: List<APIReference>? = null
-    val starting_proficiency_options: Choice = Choice()
+    val starting_proficiency_options: Choice<Proficiency> = Choice()
     val languages: List<APIReference>? = null
     val language_desc: String? = null
     val traits: List<APIReference>? = null

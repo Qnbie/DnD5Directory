@@ -26,9 +26,7 @@ class BackgroundsFragment(backgroundData: Backgrounds): FragmentBase() {
             }
         )
 
-        this += ResourceList(backgroundData.starting_equipment, fun(index:String){
-            // TODO
-        })
+
 
         backgroundData.feature?.let {
             label(it.name) {  }

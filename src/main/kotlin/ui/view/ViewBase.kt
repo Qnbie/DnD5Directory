@@ -31,13 +31,13 @@ abstract class ViewBase<T: Controller>(apiResourceList: APIResourceList) : View(
         }
     }
 
+    abstract suspend fun GetData(index: String): BaseModel
+
     private fun refresh(data: BaseModel){
         val tmp = DataFragment(data)
         dataFragment.replaceWith(tmp)
         dataFragment = tmp
     }
-
-    abstract suspend fun GetData(index: String): BaseModel
 
     open fun DataFragment(data: BaseModel): Fragment {
         return builderFragment {

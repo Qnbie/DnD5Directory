@@ -7,5 +7,6 @@ import kotlinx.serialization.Serializable
 class Language : BaseModel() {
     val type: String = ""
     val typical_speakers: List<String> = emptyList()
-    val script: String = ""
+    val script: String? = null
+    val desc: String? = null
 }

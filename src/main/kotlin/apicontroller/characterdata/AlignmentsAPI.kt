@@ -7,7 +7,7 @@ import apicontroller.APIControllerBase
 
 class AlignmentsAPI() : APIControllerBase() {
 
-    override var SITE_URL = "alignment/"
+    override var SITE_URL = "alignments/"
 
     suspend fun getAlignment(index: String) : Alignment{
         return client.get("$BASE_URL$SITE_URL$index")

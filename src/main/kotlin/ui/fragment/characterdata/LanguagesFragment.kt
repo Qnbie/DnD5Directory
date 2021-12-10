@@ -15,7 +15,13 @@ class LanguagesFragment(languageData: Language) : FragmentBase() {
             label(speker)
         }
 
-        label("Script: ${languageData.type}")
+        languageData.script?.let{
+            label("Script: $it")
+        }
+
+        languageData.desc?.let {
+            this += Description(listOf(it))
+        }
 
     }
 }

@@ -1,5 +1,6 @@
 package data.classes
 
+import data.characterdata.Proficiency
 import data.commonmodels.APIReference
 import data.commonmodels.Choice
 import data.commonmodels.Prerequisites
@@ -14,7 +15,7 @@ class MultiClassing {
 @Serializable
 class MultiClassingPrerequisites {
     val prerequisites : List<Prerequisites>? = null
-    val prerequisite_options : List<Choice>? = null
+    val prerequisite_options : List<Choice<Prerequisites>>? = null
     val proficiencies: List<APIReference>? = null
-    val proficiency_choices: List<Choice>? = null
+    val proficiency_choices: List<Choice<Proficiency>>? = null
 }

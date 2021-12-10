@@ -21,6 +21,7 @@ abstract class APIControllerBase protected constructor() : Controller(){
             serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
                 prettyPrint = true
                 isLenient = true
+                //ignoreUnknownKeys = true
             })
         }
     }
