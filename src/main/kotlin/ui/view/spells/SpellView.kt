@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class SpellView(apiResourceList: APIResourceList) : ViewBase<SpellsAPI>(apiResourceList) {
     override val apiController: SpellsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getSpell(index)
     }
 

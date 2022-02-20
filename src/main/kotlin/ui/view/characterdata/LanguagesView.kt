@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class LanguagesView(apiResourceList: APIResourceList): ViewBase<LanguagesAPI>(apiResourceList) {
     override val apiController: LanguagesAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getLanguage(index)
     }
 

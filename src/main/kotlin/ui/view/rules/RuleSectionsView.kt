@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class RuleSectionsView(apiResourceList: APIResourceList) : ViewBase<RuleSectionsAPI>(apiResourceList) {
     override val apiController: RuleSectionsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getRuleSections(index)
     }
 

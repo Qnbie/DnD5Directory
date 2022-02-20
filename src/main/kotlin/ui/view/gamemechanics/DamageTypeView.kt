@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class DamageTypeView(apiResourceList: APIResourceList) : ViewBase<DamageTypesAPI>(apiResourceList) {
     override val apiController: DamageTypesAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getDamageType(index)
     }
 

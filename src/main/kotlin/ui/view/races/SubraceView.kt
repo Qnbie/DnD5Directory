@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class SubraceView(apiResourceList: APIResourceList) : ViewBase<SubracesAPI>(apiResourceList) {
     override val apiController: SubracesAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getSubrace(index)
     }
 

@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class TraitView(apiResourceList: APIResourceList) : ViewBase<TraitsAPI>(apiResourceList) {
     override val apiController: TraitsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getTrait(index)
     }
 

@@ -2,18 +2,20 @@ package ui.view.mainmenu
 
 import javafx.scene.control.Button
 import javafx.scene.control.Label
+import kotlinx.coroutines.*
 import tornadofx.*
 import ui.stylesheet.MainMenuStyle
 
-abstract class MainMenuBase : View(){
+@DelicateCoroutinesApi
+abstract class MainMenuBase: View() {
 
-    fun SectionTitle(name: String): Label {
+    fun sectionTitle(name: String): Label {
         return label(name){
             addClass(MainMenuStyle.sectionTitle)
         }
     }
 
-    fun SectionButton(buttonName: String, buttonFun:() -> Unit): Button {
+    fun sectionButton(buttonName: String, buttonFun:() -> Unit): Button {
         return button(buttonName) {
             action {
                 runAsync {

@@ -8,7 +8,7 @@ import ui.view.ViewBase
 class SubclassesView(apiResourceList: APIResourceList) : ViewBase<SubclassesAPI>(apiResourceList) {
     override val apiController: SubclassesAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getSubclass(index)
     }
 }

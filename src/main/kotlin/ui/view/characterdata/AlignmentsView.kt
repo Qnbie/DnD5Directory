@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class AlignmentsView(apiResourceList: APIResourceList) : ViewBase<AlignmentsAPI>(apiResourceList) {
     override val apiController: AlignmentsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getAlignment(index)
     }
 

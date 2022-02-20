@@ -3,10 +3,8 @@ package ui.view
 import BaseStyleSheet.Companion.pageTitle
 import data.commonmodels.APIResourceList
 import data.commonmodels.BaseModel
-import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.*
 import kotlinx.coroutines.javafx.JavaFx
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
 import tornadofx.*
 import ui.fragment.WaitFragment
 
@@ -22,16 +20,17 @@ abstract class ViewBase<T: Controller>(apiResourceList: APIResourceList) : View(
         this+= dataFragment
     }
 
+    @DelicateCoroutinesApi
     fun refreshFromApi(index: String){
-        runBlocking(Dispatchers.Unconfined){
-            val data = GetData(index)
+        GlobalScope.launch(){
+            val data = getData(index)
             withContext(Dispatchers.JavaFx){
                 refresh(data)
             }
         }
     }
 
-    abstract suspend fun GetData(index: String): BaseModel
+    abstract suspend fun getData(index: String): BaseModel
 
     private fun refresh(data: BaseModel){
         val tmp = DataFragment(data)

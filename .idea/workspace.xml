@@ -5,62 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06311c40-245c-4ad8-97c1-4685563ed037" name="Default Changelist" comment="CodeCleanup and Project upgrades">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/DnD5Directory.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67f44e82b8bade85186d8b316a334adcb7254a18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bdeff3f480a577332bd4691e0f8b926de9feda9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/DnD5Directory.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/DnD5Directory.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bdeff3f480a577332bd4691e0f8b926de9feda9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/APIControllerBase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/backgrounds/BackgroundsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/backgrounds/BackgroundsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/AbilityScoresAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/AbilityScoresAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/AlignmentsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/AlignmentsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/LanguagesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/LanguagesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/ProficienciesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/ProficienciesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/SkillsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/characterdata/SkillsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/ClassesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/FeaturesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/FeaturesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/SubclassesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/classes/SubclassesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/EquipmentAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/EquipmentAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/EquipmentCategoriesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/EquipmentCategoriesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/MagicItemsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/MagicItemsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/WeaponPropertiesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/equipment/WeaponPropertiesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/feats/FeatsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/feats/FeatsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/ConditionsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/ConditionsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/DamageTypesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/DamageTypesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/MagicSchoolsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/gamemechanics/MagicSchoolsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/monsters/MonstersAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/monsters/MonstersAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/RacesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/RacesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/SubracesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/TraitsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/races/TraitsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/rules/RuleSectionsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/rules/RuleSectionsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/rules/RulesAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/rules/RulesAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/apicontroller/spells/SpellsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/apicontroller/spells/SpellsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/backgrounds/Backgrounds.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/AlignmentsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/ClassFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/ClassFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/FeatureFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/FeatureFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/SubclassesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/classes/SubclassesFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/ArmorFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/ArmorFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/EquipmentCategoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/EquipmentCategoryFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/EquipmentPackFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/EquipmentPackFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/MagicItemFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/MagicItemFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/WeaponFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/WeaponFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/WeaponPropertyFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/equipment/WeaponPropertyFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/feats/FeatFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/feats/FeatFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/ConditionFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/ConditionFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/DamageTypeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/DamageTypeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/MagicSchoolFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/gamemechanics/MagicSchoolFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/monster/MonsterFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/monster/MonsterFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/SubraceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/SubraceFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/TraitFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/races/TraitFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/spells/SpellFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/spells/SpellFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/APIResourceListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/APIResourceListView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/backgrounds/BackgroundsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/ProficiencyFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/characterdata/SkillFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/fragment/rules/RuleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/ViewBase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/backgrounds/BackgroundsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AbilityScoresView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/AlignmentsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/LanguagesView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/ProficiencyView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/characterdata/SkillView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/ClassView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/FeatureView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/SubclassesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/classes/SubclassesView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/ArmorView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentCategoryView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentCategoryView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentPackView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/EquipmentPackView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/MagicItemView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/MagicItemView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponPropertyView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponPropertyView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/equipment/WeaponView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/feats/FeatView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/feats/FeatView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/ConditionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/ConditionView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/DamageTypeView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/DamageTypeView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/MagicSchoolView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/gamemechanics/MagicSchoolView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/BackgroundsSectionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/BackgroundsSectionView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/CharacterDataView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/CharacterDataView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/ClassesView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/ClassesView.kt" afterDir="false" />
@@ -72,6 +43,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/RacesSectionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/RacesSectionView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/RulesSectionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/RulesSectionView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/SpellsSectionView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/mainmenu/SpellsSectionView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/monster/MonsterView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/monster/MonsterView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/RaceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/RaceView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/SubraceView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/SubraceView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/TraitView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/races/TraitView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleSectionsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleSectionsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/rules/RuleView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/view/spells/SpellView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/view/spells/SpellView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +122,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
@@ -374,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636991323250</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="CodeCleanup and Project upgrades">
+      <created>1639148170955</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1639148170955</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class SkillView(apiResourceList: APIResourceList) : ViewBase<SkillsAPI>(apiResourceList) {
     override val apiController: SkillsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getSkill(index)
     }
 

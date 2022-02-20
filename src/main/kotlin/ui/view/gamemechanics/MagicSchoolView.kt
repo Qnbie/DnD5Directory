@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class MagicSchoolView(apiResourceList: APIResourceList) : ViewBase<MagicSchoolsAPI>(apiResourceList) {
     override val apiController: MagicSchoolsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getMagicSchool(index)
     }
 

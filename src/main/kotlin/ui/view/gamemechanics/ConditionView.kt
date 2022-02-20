@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class ConditionView(apiResourceList: APIResourceList) : ViewBase<ConditionsAPI>(apiResourceList) {
     override val apiController: ConditionsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getCondition(index)
     }
 

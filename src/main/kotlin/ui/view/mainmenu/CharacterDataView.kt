@@ -1,50 +1,49 @@
 package ui.view.mainmenu
 
 import apicontroller.characterdata.*
-import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.*
 import kotlinx.coroutines.javafx.JavaFx
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
 import tornadofx.*
 import ui.view.characterdata.*
 
+@DelicateCoroutinesApi
 class CharacterDataView : MainMenuBase() {
     override val root = vbox {
-        this += SectionTitle("Character data")
-        this += SectionButton("Ability Scores",fun (){
-            runBlocking (Dispatchers.Unconfined){
+        this += sectionTitle("Character data")
+        this += sectionButton("Ability Scores",fun (){
+            GlobalScope.launch(){
                 val resourceList = AbilityScoresAPI().getResourceList()
                 withContext(Dispatchers.JavaFx){
                     replaceWith(AbilityScoresView(resourceList))
                 }
             }
         })
-        this += SectionButton("Skills",fun (){
-            runBlocking (Dispatchers.Unconfined){
+        this += sectionButton("Skills",fun (){
+            GlobalScope.launch(){
                 val resourceList = SkillsAPI().getResourceList()
                 withContext(Dispatchers.JavaFx){
                     replaceWith(SkillView(resourceList))
                 }
             }
         })
-        this += SectionButton("Proficiencies",fun (){
-            runBlocking (Dispatchers.Unconfined){
+        this += sectionButton("Proficiencies",fun (){
+            GlobalScope.launch(){
                 val resourceList = ProficienciesAPI().getResourceList()
                 withContext(Dispatchers.JavaFx){
                     replaceWith(ProficiencyView(resourceList))
                 }
             }
         })
-        this += SectionButton("Languages",fun (){
-            runBlocking (Dispatchers.Unconfined){
+        this += sectionButton("Languages",fun (){
+            GlobalScope.launch(){
                 val resourceList = LanguagesAPI().getResourceList()
                 withContext(Dispatchers.JavaFx){
                     replaceWith(LanguagesView(resourceList))
                 }
             }
         })
-        this += SectionButton("Alignments",fun (){
-            runBlocking (Dispatchers.Unconfined){
+        this += sectionButton("Alignments",fun (){
+            GlobalScope.launch(){
                 val resourceList = AlignmentsAPI().getResourceList()
                 withContext(Dispatchers.JavaFx){
                     replaceWith(AlignmentsView(resourceList))

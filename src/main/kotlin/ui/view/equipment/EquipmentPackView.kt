@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class EquipmentPackView(apiResourceList: APIResourceList) : ViewBase<EquipmentAPI>(apiResourceList) {
     override val apiController: EquipmentAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getEquipmentPack(index)
     }
 

@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class FeatView(apiResourceList: APIResourceList) : ViewBase<FeatsAPI>(apiResourceList) {
     override val apiController: FeatsAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getFeat(index)
     }
 

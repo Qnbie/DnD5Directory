@@ -11,7 +11,7 @@ import ui.view.ViewBase
 class ProficiencyView(apiResourceList: APIResourceList) : ViewBase<ProficienciesAPI>(apiResourceList) {
     override val apiController: ProficienciesAPI by inject()
 
-    override suspend fun GetData(index: String): BaseModel {
+    override suspend fun getData(index: String): BaseModel {
         return apiController.getProficiency(index)
     }
 
